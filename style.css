@@ -37,4 +37,36 @@ body {
 body{
     background-color: var(--bg-color);
     overflow-x: hidden;
+    color: var(--text-color);
+}
+
+.container{
+    margin: auto;
+    max-width: 1300px;
+  padding: 1.5em;
+  height: calc(100% - 3em);
+ 
+
+}
+.logo svg{
+    color: var(--primary-color);
+}
+button{
+    outline: none;
+    border:none;
+    padding: 0.5em;
+    background-color:var(--primary-color);
+    color: #fff;
+    padding: 16px 0;
+    border-radius: 2em;
+    text-align: center; 
+}
+.swiper-slide{
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+.swiper-slide img{
+    margin: 0 !important;
 }
