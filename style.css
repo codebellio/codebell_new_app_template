@@ -60,6 +60,8 @@ button{
     padding: 16px 0;
     border-radius: 2em;
     text-align: center; 
+    font-size: 16px;
+    font-size: 500;
 }
 .swiper-slide{
     display: flex !important;
