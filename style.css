@@ -45,6 +45,7 @@ body{
     max-width: 1300px;
   padding: 1.5em;
   height: calc(100% - 3em);
+  width: calc(100% -3em);
  
 
 }
@@ -61,7 +62,7 @@ button{
     border-radius: 2em;
     text-align: center; 
     font-size: 16px;
-    font-size: 500;
+    font-weight: 600;
 }
 .swiper-slide{
     display: flex !important;
