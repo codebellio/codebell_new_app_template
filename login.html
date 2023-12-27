@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="layout.css">
+    <link rel="stylesheet" href="/assets/swiper-bundle.css">
+    <script src="/assets/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+    <div class="container flex column center gap">
+        <div class="flex">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-chevron-left" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
+            </svg>
+        </div>
+        <div class="flex column gap" style="flex:1">
+            <h1>Hey there!</h1>
+            <p>Please provide your mobile number to Sign-up/Login to your account.</p>
+            <div class="flex input">
+                <p style="margin-right: 0.5em;">+91</p>
+                <input type="tel" id="phoneNumber" placeholder="Enter your phone number">
+            </div>
+            <span style="font-size: var(--f-12);color:var(--sub-text-color)">You will receive an SMS verification that may apply message and data rates.</span>
+        </div>
+        <div class="flex column middle gap">
+            <a href="signup.html" class="button">Continue</a>
+            <p style="color:var(--primary-color)">Use email, instead</p>
+        </div>
+
+    </div>
+    <script src="main.js"></script>
+    <script src="darkmode.js"></script>
+</body>
+
+</html>
