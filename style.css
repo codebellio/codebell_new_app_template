@@ -162,5 +162,46 @@ input::placeholder {
 height: 12px;
 }
 .footer{
-    background-color:rgb(123, 34, 34);
+    background-color:var(--bg-color);
+    
+    position: fixed;
+    padding: 0.5em;
+
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    width: calc(100% - 1em);
+    bottom: 0;
+    border-top-right-radius: 0.5em;
+    border-top-left-radius: 0.5em;
+    z-index: 5;
+}
+.qr_footer{
+    background-color: var(--bg-color);
+    position: absolute;
+    margin-bottom: 2.5em;
+    color: var(--primary-color);
+    padding: 0.5em;
+    box-shadow:  0px 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+}
+.navigation{
+    background-color: var(--bg-color);
+}
+.scan_now{
+    position: absolute;
+    top: -50%;
+    background-color: var(--bg-color);
+    border-radius: 50%;
+
+}
+
+.scan_now svg{
+    color: var(--primary-color) !important;
+    z-index: 5;
+
+}
+.footer svg{
+    color: grey;
+}
+.footer svg:hover{
+    color: var(--primary-color);
 }
