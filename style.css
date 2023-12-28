@@ -30,6 +30,8 @@ body {
     --f-20:20px;
     /* standard font size for app*/
 
+    --box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+
 }
 
 .dark {
@@ -37,6 +39,7 @@ body {
     --text-color: #fff;
     --sub-text-color: #cacaca;
     --bg-1:#1c1c1c;
+    --box-shadow: 0 0 2px var(--primary-color);
 }
 
 body {
@@ -167,41 +170,57 @@ height: 12px;
     position: fixed;
     padding: 0.5em;
 
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    box-shadow: var(--box-shadow);
     width: calc(100% - 1em);
     bottom: 0;
     border-top-right-radius: 0.5em;
     border-top-left-radius: 0.5em;
     z-index: 5;
 }
-.qr_footer{
-    background-color: var(--bg-color);
-    position: absolute;
-    margin-bottom: 2.5em;
-    color: var(--primary-color);
-    padding: 0.5em;
-    box-shadow:  0px 4px 12px rgba(0, 0, 0, 0.1);
-    border-radius: 50%;
-}
-.navigation{
-    background-color: var(--bg-color);
+
+.footer p{
+    font-size: var(--f-12);
 }
 .scan_now{
     position: absolute;
-    top: -50%;
+    top: -60%;
     background-color: var(--bg-color);
     border-radius: 50%;
-
 }
 
 .scan_now svg{
     color: var(--primary-color) !important;
     z-index: 5;
-
 }
 .footer svg{
-    color: grey;
+    color: var(--text-color);
 }
 .footer svg:hover{
     color: var(--primary-color);
+}
+.download_qr{
+    width: 80%;
+    margin: auto;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    border-radius: 0.5em;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.15) inset;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+.main-qr svg{
+    color: var(--text-color);
+}
+.qr_lock{
+    position: relative;
+}
+.lock{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.qr_new{
+
+filter: blur(8px);
 }

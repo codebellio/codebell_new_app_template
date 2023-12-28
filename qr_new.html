@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="layout.css">
+    <link rel="stylesheet" href="/assets/swiper-bundle.css">
+    <script src="/assets/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+    <div class="container flex column center gap">
+        <div class="flex">
+            <a href="login.html" style="color: var(--text-color);"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-chevron-left" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
+            </svg></a>
+        </div>
+        <div class="flex column text-center middle  center gap"> <h2>Default Codebell</h2>
+            <p style="color: var(--sub-text-color);">This can be used to reach you without compromising privacy.</p>
+        </div>
+       
+        <div class="flex column qr_lock" style="flex:1">
+            <div class="flex center">
+                <p style="color: var(--sub-text-color);">User ID:  <span style="color:var(--primary-color);font-weight:500;">Junial02</span></p>
+            </div>
+            <div class="flex column center middle gap download_qr qr_new"  >
+                <h3>Scan to call</h3>
+                <div class="qr_code_svg">
+                    <svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Replace 'your-svg-file.svg' with the actual file name of your SVG -->
+                        <image xlink:href="/assets/img/qr.svg" width="200" height="200" />
+                      </svg>
+                </div>
+                <p class="flex middle s-gap main-qr">Powered by  <svg width="100" height="50" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Replace 'your-svg-file.svg' with the actual file name of your SVG -->
+                    <image xlink:href="/assets/img/codebell.svg" width="100" height="50" />
+                  </svg></p>
+
+            </div>
+            <div class="lock flex">
+                <img src="/assets/img/lock.png" alt="">
+            </div>
+            <span class="flex center" style="font-weight: 700;color:var(--primary-color)">Edit setting</span>
+
+
+        </div>
+        <div class="flex column middle gap">
+            <a href="verification.html" class="button">Continue</a>
+            
+        </div>
+
+    </div>
+    <script src="main.js"></script>
+    <script src="darkmode.js"></script>
+</body>
+
+</html>
