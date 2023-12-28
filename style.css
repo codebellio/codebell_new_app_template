@@ -21,15 +21,14 @@ body {
     --text-color: #090A0A;
     --sub-text-color: #6C7072;
     --border-color: #E3E5E5;
+    --bg-1:#F7F9FA;
     /* font-size */
     --heading: 24px;
     --big-heading: 32px;
     --f-12: 12px;
     --f-16: 16px;
+    --f-20:20px;
     /* standard font size for app*/
-
-
-
 
 }
 
@@ -37,6 +36,7 @@ body {
     --bg-color: #141414;
     --text-color: #fff;
     --sub-text-color: #cacaca;
+    --bg-1:#1c1c1c;
 }
 
 body {
@@ -47,32 +47,17 @@ body {
 
 .container {
     margin: auto;
-    max-width: 1300px;
+    max-width: 800px;
     padding: 1.5em;
     height: calc(100% - 3em);
     width: calc(100% -3em);
-
-
 }
 
 .logo svg {
     color: var(--primary-color);
 }
 
-.button {
-    outline: none;
-    border: none;
-    padding: 0.5em;
 
-    background-color: var(--primary-color);
-    color: #fff;
-    padding: 1em 8em;
-    border-radius: 2em;
-    text-align: center;
-    font-size: 16px;
-    font-weight: 600;
-    cursor: pointer;
-}
 
 .swiper-slide {
     display: flex !important;
@@ -87,7 +72,6 @@ body {
 
 .swiper-pagination-bullet {
     background-color: var(--primary-color) !important;
-
 }
 
 a {
@@ -98,8 +82,20 @@ p {
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
+}
 
-
+.button {
+    outline: none;
+    border: none;
+    padding: 0.5em;
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 1em 8em;
+    border-radius: 2em;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
 }
 
 input {
@@ -111,16 +107,17 @@ input {
     font-weight: 500;
     width: 100%;
 }
+
 input::placeholder {
-    font-weight: 400; /* Adjust the font weight as needed */
-  }
+    font-weight: 400;
+    /* Adjust the font weight as needed */
+}
+
 .input {
     padding: 0.8em;
     border: 1px solid var(--border-color);
     border-radius: 0.5em;
     transition: 0.5s;
-
-
 }
 
 .input:focus-within {
@@ -132,9 +129,38 @@ input::placeholder {
     width: 30px;
     height: 30px;
     border-radius: 50%;
-   
-
 }
-.verification-input input{
+
+.verification-input input {
     width: 30%;
+}
+
+.profile-img {
+    border: 2.7px solid #E6EBF2;
+    border-radius: 50%;
+}
+
+.profile-img img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.notification {
+    position: relative;
+}
+
+.notification-count {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #B81717;
+    color: white;
+    border-radius: 50%;
+    
+    font-size: 5px;
+    width: 13px;
+height: 12px;
+}
+.footer{
+    background-color:rgb(123, 34, 34);
 }
