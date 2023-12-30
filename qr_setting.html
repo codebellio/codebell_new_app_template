@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Setting</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="layout.css">
+    <link rel="stylesheet" href="/assets/swiper-bundle.css">
+    <script src="/assets/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+    <div class="container flex column center gap" style="padding: 0;">
+        <div class="flex between middle padding">
+            <div class="flex gap middle ">
+                <div class="profile-img flex middle">
+                    <img src="/assets/img/profile.png" alt="">
+                </div>
+                <h2 style="font-size: var(--f-20);">Alex</h2>
+            </div>
+            <div class="flex gap middle">
+                <div class="notification">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <mask id="mask0_281_8023" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0"
+                            width="24" height="24">
+                            <rect width="24" height="24" fill="currentColor" />
+                        </mask>
+                        <g mask="url(#mask0_281_8023)">
+                            <path
+                                d="M4 19V17H6V10C6 8.61667 6.41667 7.3875 7.25 6.3125C8.08333 5.2375 9.16667 4.53333 10.5 4.2V3.5C10.5 3.08333 10.6458 2.72917 10.9375 2.4375C11.2292 2.14583 11.5833 2 12 2C12.4167 2 12.7708 2.14583 13.0625 2.4375C13.3542 2.72917 13.5 3.08333 13.5 3.5V4.2C14.8333 4.53333 15.9167 5.2375 16.75 6.3125C17.5833 7.3875 18 8.61667 18 10V17H20V19H4ZM12 22C11.45 22 10.9792 21.8042 10.5875 21.4125C10.1958 21.0208 10 20.55 10 20H14C14 20.55 13.8042 21.0208 13.4125 21.4125C13.0208 21.8042 12.55 22 12 22Z"
+                                fill="currentColor" />
+                        </g>
+                    </svg>
+                    <div class="notification-count flex middle center">3</div>
+
+                </div>
+                <div class="qr_code">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                        <mask id="mask0_281_8029" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0"
+                            width="28" height="28">
+                            <rect width="28" height="28" fill="currentColor" />
+                        </mask>
+                        <g mask="url(#mask0_281_8029)">
+                            <path
+                                d="M2.33331 8.16666V2.33333H8.16665V4.66666H4.66665V8.16666H2.33331ZM2.33331 25.6667V19.8333H4.66665V23.3333H8.16665V25.6667H2.33331ZM19.8333 25.6667V23.3333H23.3333V19.8333H25.6666V25.6667H19.8333ZM23.3333 8.16666V4.66666H19.8333V2.33333H25.6666V8.16666H23.3333ZM20.4166 20.4167H22.1666V22.1667H20.4166V20.4167ZM20.4166 16.9167H22.1666V18.6667H20.4166V16.9167ZM18.6666 18.6667H20.4166V20.4167H18.6666V18.6667ZM16.9166 20.4167H18.6666V22.1667H16.9166V20.4167ZM15.1666 18.6667H16.9166V20.4167H15.1666V18.6667ZM18.6666 15.1667H20.4166V16.9167H18.6666V15.1667ZM16.9166 16.9167H18.6666V18.6667H16.9166V16.9167ZM15.1666 15.1667H16.9166V16.9167H15.1666V15.1667ZM22.1666 5.83333V12.8333H15.1666V5.83333H22.1666ZM12.8333 15.1667V22.1667H5.83331V15.1667H12.8333ZM12.8333 5.83333V12.8333H5.83331V5.83333H12.8333ZM11.0833 20.4167V16.9167H7.58331V20.4167H11.0833ZM11.0833 11.0833V7.58333H7.58331V11.0833H11.0833ZM20.4166 11.0833V7.58333H16.9166V11.0833H20.4166Z"
+                                fill="currentColor" />
+                        </g>
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="flex column gap hjo" style="flex:1">
+            <div class="flex column gap box-model">
+
+                <h3>Name</h3>
+                <div class="flex input">
+                    <input type="text" placeholder="Ex. Car Codebell">
+                </div>
+            </div>
+
+            <div class="flex column box-model">
+                <h3>QR Landing Pahe</h3>
+                <p style="font-size: 14px;">*This is what people see once they scan your QR</p>
+                <div class="flex middle s-gap">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <mask id="mask0_441_2725" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0"
+                            width="20" height="20">
+                            <rect width="20" height="20" fill="#D9D9D9" />
+                        </mask>
+                        <g mask="url(#mask0_441_2725)">
+                            <path
+                                d="M10 13.3333C11.0417 13.3333 11.9271 12.9687 12.6563 12.2396C13.3855 11.5104 13.75 10.625 13.75 9.58333C13.75 8.54167 13.3855 7.65625 12.6563 6.92708C11.9271 6.19792 11.0417 5.83333 10 5.83333C8.95837 5.83333 8.07296 6.19792 7.34379 6.92708C6.61462 7.65625 6.25004 8.54167 6.25004 9.58333C6.25004 10.625 6.61462 11.5104 7.34379 12.2396C8.07296 12.9687 8.95837 13.3333 10 13.3333ZM10 11.8333C9.37504 11.8333 8.84379 11.6146 8.40629 11.1771C7.96879 10.7396 7.75004 10.2083 7.75004 9.58333C7.75004 8.95833 7.96879 8.42708 8.40629 7.98958C8.84379 7.55208 9.37504 7.33333 10 7.33333C10.625 7.33333 11.1563 7.55208 11.5938 7.98958C12.0313 8.42708 12.25 8.95833 12.25 9.58333C12.25 10.2083 12.0313 10.7396 11.5938 11.1771C11.1563 11.6146 10.625 11.8333 10 11.8333ZM10 15.8333C7.97226 15.8333 6.12504 15.2674 4.45837 14.1354C2.79171 13.0035 1.58337 11.4861 0.833374 9.58333C1.58337 7.68056 2.79171 6.16319 4.45837 5.03125C6.12504 3.89931 7.97226 3.33333 10 3.33333C12.0278 3.33333 13.875 3.89931 15.5417 5.03125C17.2084 6.16319 18.4167 7.68056 19.1667 9.58333C18.4167 11.4861 17.2084 13.0035 15.5417 14.1354C13.875 15.2674 12.0278 15.8333 10 15.8333ZM10 14.1667C11.5695 14.1667 13.0105 13.7535 14.323 12.9271C15.6355 12.1007 16.6389 10.9861 17.3334 9.58333C16.6389 8.18056 15.6355 7.06597 14.323 6.23958C13.0105 5.41319 11.5695 5 10 5C8.4306 5 6.98962 5.41319 5.67712 6.23958C4.36462 7.06597 3.36115 8.18056 2.66671 9.58333C3.36115 10.9861 4.36462 12.1007 5.67712 12.9271C6.98962 13.7535 8.4306 14.1667 10 14.1667Z"
+                                fill="currentColor" />
+                        </g>
+                    </svg>
+                    <p style="font-weight: 600;color:var(--primary-color)">Preview & Edit</p>
+                </div>
+            </div>
+            <hr>
+            <div class="flex middle between padding">
+                <h3>Status <span style="color: var( --inactive); "> (active)</span></h3>
+                <label class="switch">
+                    <input type="checkbox" checked>
+                    <span class="slider round"></span>
+                </label>
+            </div>
+            <hr>
+            <div class="flex middle between padding">
+                <h3>DND <span style="color: var( --inactive);"> (active)</span></h3>
+                <label class="switch">
+                    <input type="checkbox" checked>
+                    <span class="slider round"></span>
+                </label>
+            </div>
+            <div class="flex column gap middle padding bg-2">
+                <div class="flex between middle" style="width: 100%;">
+                    <h3>Start</h3>
+                    <div class="flex middle s-gap">
+                        <p>11:00 PM </p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-chevron-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="flex between middle" style="width: 100%;">
+                    <h3>End</h3>
+                    <div class="flex middle s-gap">
+                        <p>11:00 PM </p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-chevron-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="flex between middle" style="width: 100%;">
+                    <h3>Repeat</h3>
+                    <div class="flex middle s-gap">
+                        <p>Everyday</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-chevron-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                        </svg>
+                    </div>
+                </div>
+
+            </div>
+            <div class="flex middle between box-model">
+                <div class="flex s-gap">
+                    <h3>Geofencing</h3>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <mask id="mask0_441_2797" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0"
+                            width="20" height="20">
+                            <rect width="20" height="20" fill="currentColor" />
+                        </mask>
+                        <g mask="url(#mask0_441_2797)">
+                            <path
+                                d="M9.16663 14.1667H10.8333V9.16666H9.16663V14.1667ZM9.99996 7.49999C10.2361 7.49999 10.434 7.42013 10.5937 7.26041C10.7534 7.10068 10.8333 6.90277 10.8333 6.66666C10.8333 6.43055 10.7534 6.23263 10.5937 6.07291C10.434 5.91318 10.2361 5.83332 9.99996 5.83332C9.76385 5.83332 9.56593 5.91318 9.40621 6.07291C9.24649 6.23263 9.16663 6.43055 9.16663 6.66666C9.16663 6.90277 9.24649 7.10068 9.40621 7.26041C9.56593 7.42013 9.76385 7.49999 9.99996 7.49999ZM9.99996 18.3333C8.84718 18.3333 7.76385 18.1146 6.74996 17.6771C5.73607 17.2396 4.85413 16.6458 4.10413 15.8958C3.35413 15.1458 2.76038 14.2639 2.32288 13.25C1.88538 12.2361 1.66663 11.1528 1.66663 9.99999C1.66663 8.84721 1.88538 7.76388 2.32288 6.74999C2.76038 5.7361 3.35413 4.85416 4.10413 4.10416C4.85413 3.35416 5.73607 2.76041 6.74996 2.32291C7.76385 1.88541 8.84718 1.66666 9.99996 1.66666C11.1527 1.66666 12.2361 1.88541 13.25 2.32291C14.2638 2.76041 15.1458 3.35416 15.8958 4.10416C16.6458 4.85416 17.2395 5.7361 17.677 6.74999C18.1145 7.76388 18.3333 8.84721 18.3333 9.99999C18.3333 11.1528 18.1145 12.2361 17.677 13.25C17.2395 14.2639 16.6458 15.1458 15.8958 15.8958C15.1458 16.6458 14.2638 17.2396 13.25 17.6771C12.2361 18.1146 11.1527 18.3333 9.99996 18.3333Z"
+                                fill="#00C2FF" />
+                        </g>
+                    </svg>
+                </div>
+                <label class="switch">
+                    <input type="checkbox" checked>
+                    <span class="slider round"></span>
+                </label>
+            </div>
+            <div class="flex middle between padding bg-2">
+                <div class="flex column s-gap ">
+                    <h3>Set Location</h3>
+                    <span>Parim Vihar, VR layour, Del...</span>
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <mask id="mask0_441_2806" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+                      <rect width="24" height="24" fill="currentColor"/>
+                    </mask>
+                    <g mask="url(#mask0_441_2806)">
+                      <path d="M12 22C9.31667 19.7167 7.3125 17.5958 5.9875 15.6375C4.6625 13.6792 4 11.8667 4 10.2C4 7.7 4.80417 5.70833 6.4125 4.225C8.02083 2.74167 9.88333 2 12 2H12.5C12.6667 2 12.8333 2.01667 13 2.05V4.075C12.8333 4.04167 12.6708 4.02083 12.5125 4.0125C12.3542 4.00417 12.1833 4 12 4C10.3167 4 8.89583 4.57917 7.7375 5.7375C6.57917 6.89583 6 8.38333 6 10.2C6 11.3833 6.49167 12.7375 7.475 14.2625C8.45833 15.7875 9.96667 17.4833 12 19.35C14.0333 17.4833 15.5417 15.7875 16.525 14.2625C17.5083 12.7375 18 11.3833 18 10.2V10H20V10.2C20 11.8667 19.3375 13.6792 18.0125 15.6375C16.6875 17.5958 14.6833 19.7167 12 22ZM12 12C12.55 12 13.0208 11.8042 13.4125 11.4125C13.8042 11.0208 14 10.55 14 10C14 9.45 13.8042 8.97917 13.4125 8.5875C13.0208 8.19583 12.55 8 12 8C11.45 8 10.9792 8.19583 10.5875 8.5875C10.1958 8.97917 10 9.45 10 10C10 10.55 10.1958 11.0208 10.5875 11.4125C10.9792 11.8042 11.45 12 12 12ZM18 8H20V5H23V3H20V0H18V3H15V5H18V8Z" fill="currentColor"/>
+                    </g>
+                  </svg>
+            </div>
+
+        </div>
+
+        <div class="flex column middle gap">
+            <a href="verification.html" class="button">Continue</a>
+
+        </div>
+
+    </div>
+    <script src="main.js"></script>
+    <script src="darkmode.js"></script>
+</body>
+
+</html>
