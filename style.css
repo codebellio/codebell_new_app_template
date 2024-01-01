@@ -385,7 +385,9 @@ hr {
     width: 0;
     height: 0;
 }
-
+a{
+    color: var(--text-color);
+}
 .slider {
     position: absolute;
     cursor: pointer;
@@ -440,7 +442,6 @@ input:checked+.slider:before {
 /* device page */
 .device-box{
     position: relative;
-   
     width: 117px;
     height: 100px;
     border-radius: 1.5em;
@@ -453,6 +454,7 @@ input:checked+.slider:before {
 .device-item h2{
     font-weight: 600;
     font-size: 1rem;
+    line-height: normal;
 }
 .device-item p{
     font-size: 0.75rem;
@@ -470,3 +472,13 @@ input:checked+.slider:before {
  .active-device{
     border: 2px solid var(--primary-color);
 }
+.btn-setting{
+    padding: 1rem;
+    background-color:var(--primary-color);
+    width: 80%;
+    margin: auto;
+    border-radius: 0.5rem;
+    color: #fff;
+}
+
+
