@@ -246,7 +246,7 @@ input::placeholder {
 .navigation .item-list .item {
     position: relative;
     width: 70px;
-   
+  
     cursor: pointer;
 
 }
@@ -254,10 +254,11 @@ input::placeholder {
 .navigation .item-list .item .icon {
     position: relative;
     display: block;
-    line-height: 80px;
+    line-height: 75px;
     text-align: center;
     font-size: 1.5rem;
     color: var(--primary-color);
+   
 
 }
 
@@ -267,7 +268,9 @@ input::placeholder {
 }
 
 .navigation .item-list .item.active .icon {
-    transform: translateY(-45px);
+   
+    transform: translateY(-43px);
+   
     color: #fff;
 }
 
@@ -289,8 +292,8 @@ input::placeholder {
 .indicator {
     position: absolute;
     top: -50%;
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
     background-color: var(--primary-color);
     border-radius: 50%;
     border: 6px solid var(--bg-color);
@@ -306,7 +309,7 @@ input::placeholder {
     height: 20px;
     left: -20px;
     background: transparent;
-    border-top-right-radius: 20px;
+    border-top-right-radius: 1.5rem;
     box-shadow: 1px -10px 0 0 var(--bg-color);
 }
 .indicator::after {
@@ -317,7 +320,7 @@ input::placeholder {
     height: 20px;
     right: -20px;
     background: transparent;
-    border-top-left-radius: 20px;
+    border-top-left-radius: 1.5rem;
     box-shadow: -1px -10px 0 0 var(--bg-color);
 }
 
