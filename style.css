@@ -231,8 +231,8 @@ input::placeholder {
     background-color: var(--bg-1);
     border-top-left-radius: 0.5em;
     border-top-right-radius: 0.5em;
-   
-  
+    
+
 
 }
 
@@ -258,6 +258,7 @@ input::placeholder {
     text-align: center;
     font-size: 1.5rem;
     color: var(--primary-color);
+
    
 
 }
@@ -272,6 +273,7 @@ input::placeholder {
     transform: translateY(-43px);
    
     color: #fff;
+    
 }
 
 .navigation .item-list .item p {
@@ -299,6 +301,10 @@ input::placeholder {
     border: 6px solid var(--bg-color);
     transition: 0.2s;
     z-index: 1;
+    box-shadow:  var(--primary-color) 0px 1px 2px -1.9px;
+
+    
+
 }
 
 .indicator::before {
