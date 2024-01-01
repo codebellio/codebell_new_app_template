@@ -441,7 +441,7 @@ input:checked+.slider:before {
 .device-box{
     position: relative;
    
-    width: 114px;
+    width: 117px;
     height: 100px;
     border-radius: 1.5em;
     box-shadow: var(--box-shadow);
