@@ -248,7 +248,8 @@ filter: blur(8px);
     padding:0em 1.5em 0em 1.5em;
 }
 hr{
-    border: 0.5px solid var(--border-color);
+    border: 1px solid var(--border-color);
+    border-width: 1px ;
 }
 .switch {
     position: relative;
