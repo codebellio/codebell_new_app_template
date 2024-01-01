@@ -277,7 +277,7 @@ input::placeholder {
 .navigation .item-list .item p {
     position: absolute;
     letter-spacing: 0.05rem;
-    transition: 0.5s;
+    transition: 0.2s;
     opacity: 0;
     transform: translateY(30px);
     color: var(--primary-color);
@@ -297,7 +297,7 @@ input::placeholder {
     background-color: var(--primary-color);
     border-radius: 50%;
     border: 6px solid var(--bg-color);
-    transition: 0.5s;
+    transition: 0.2s;
     z-index: 1;
 }
 
