@@ -569,6 +569,7 @@ letter-spacing: 0.01563rem;
     padding-right: 1.5rem;
     padding-left: 1.5rem;
     height: 4rem;
+   
 position: relative;
     border-bottom: 1px solid var(--border-color)
 }
@@ -583,7 +584,7 @@ line-height: 1rem;
 }
 .notification-time{
 position: absolute;
-bottom: 0;
+bottom: 5%;
 right: 5%;
 
 }
