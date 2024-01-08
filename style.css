@@ -224,7 +224,7 @@ input::placeholder {
     top: 0;
 }
 .middle-contents{
-    overflow: scroll;
+    overflow-y: scroll;
 }
 .footer {
     position: sticky;
