@@ -54,15 +54,25 @@
 
 
         <div class="flex column gap hjo middle-contents" style="flex:1">
-            <div class="flex column gap box-model">
-
-                <h3>Name</h3>
-                <div class="flex input">
-                    <input type="text" placeholder="Ex. Car Codebell">
+            <!-- 4 tabs view,setting,preview,visits -->
+            <div class="flex center padding" style="padding-top: 0;padding-bottom:0; ">
+                <div class="flex middle center" style="background:var(--tab-bg);border-radius: 0.5em;">
+                    <a href="" class="flex center middle tab-item ">
+                        view
+                    </a>
+                    <a href="" class="flex center middle tab-item active-tab">
+                        setting
+                    </a>
+                    <a href="" class="flex center middle tab-item">
+                        preview
+                    </a>
+                    <a href="" class="flex center middle tab-item">
+                        visits
+                    </a>
                 </div>
             </div>
 
-          
+
             <div class="flex middle between padding  bg-2">
                 <h3>Status <span style="color: var( --inactive); "> (active)</span></h3>
                 <label class="switch">
@@ -70,15 +80,9 @@
                     <span class="slider round"></span>
                 </label>
             </div>
-        
-            <div class="flex middle between padding">
-                <h3>DND <span style="color: var( --inactive);"> (active)</span></h3>
-                <label class="switch">
-                    <input type="checkbox" checked>
-                    <span class="slider round"></span>
-                </label>
-            </div>
-            <div class="flex column gap middle padding bg-2">
+
+
+            <!-- <div class="flex column gap middle padding bg-2">
                 <div class="flex between middle" style="width: 100%;">
                     <h3>Start</h3>
                     <div class="flex middle s-gap">
@@ -113,7 +117,7 @@
                     </div>
                 </div>
 
-            </div>
+            </div> -->
             <div class="flex middle between box-model">
                 <div class="flex s-gap">
                     <h3>Geofencing</h3>
@@ -130,24 +134,43 @@
                     </svg>
                 </div>
                 <label class="switch">
-                    <input type="checkbox" checked>
+                    <input type="checkbox" id="toggleSwitch" checked>
                     <span class="slider round"></span>
                 </label>
             </div>
-            <div class="flex middle between padding bg-2">
-                <div class="flex column s-gap ">
-                    <h3>Set Location</h3>
-                    <span>Parim Vihar, VR layour, Del...</span>
+            <div id="popupContainer" class="popup-container">
+                <!-- popup content -->
+                <div class="popup-content">
+                    <div class="flex middle between padding bg-1" style="border-bottom: 1px solid var(--border-color);">
+                        <div class="flex column s-gap ">
+                            <h3>Set Location</h3>
+                            <span>Parim Vihar, VR layour, Del...</span>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <mask id="mask0_441_2806" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0"
+                                width="24" height="24">
+                                <rect width="24" height="24" fill="currentColor" />
+                            </mask>
+                            <g mask="url(#mask0_441_2806)">
+                                <path
+                                    d="M12 22C9.31667 19.7167 7.3125 17.5958 5.9875 15.6375C4.6625 13.6792 4 11.8667 4 10.2C4 7.7 4.80417 5.70833 6.4125 4.225C8.02083 2.74167 9.88333 2 12 2H12.5C12.6667 2 12.8333 2.01667 13 2.05V4.075C12.8333 4.04167 12.6708 4.02083 12.5125 4.0125C12.3542 4.00417 12.1833 4 12 4C10.3167 4 8.89583 4.57917 7.7375 5.7375C6.57917 6.89583 6 8.38333 6 10.2C6 11.3833 6.49167 12.7375 7.475 14.2625C8.45833 15.7875 9.96667 17.4833 12 19.35C14.0333 17.4833 15.5417 15.7875 16.525 14.2625C17.5083 12.7375 18 11.3833 18 10.2V10H20V10.2C20 11.8667 19.3375 13.6792 18.0125 15.6375C16.6875 17.5958 14.6833 19.7167 12 22ZM12 12C12.55 12 13.0208 11.8042 13.4125 11.4125C13.8042 11.0208 14 10.55 14 10C14 9.45 13.8042 8.97917 13.4125 8.5875C13.0208 8.19583 12.55 8 12 8C11.45 8 10.9792 8.19583 10.5875 8.5875C10.1958 8.97917 10 9.45 10 10C10 10.55 10.1958 11.0208 10.5875 11.4125C10.9792 11.8042 11.45 12 12 12ZM18 8H20V5H23V3H20V0H18V3H15V5H18V8Z"
+                                    fill="currentColor" />
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="flex column s-gap padding bg-1">
+                        <h3>Radius</h3>
+                        <p id="sliderValue" class="slider-value">10m</p>
+                        <input type="range" min="10" max="100" value="10" class="slider-scale" id="radiusSlider">
+<!-- 
+                        <p id="sliderValue">10m</p> -->
+                    </div>
+                    <div class="text-center save-btn"  id="confirmBtn">confirm</div>
+
+
                 </div>
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                    <mask id="mask0_441_2806" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
-                      <rect width="24" height="24" fill="currentColor"/>
-                    </mask>
-                    <g mask="url(#mask0_441_2806)">
-                      <path d="M12 22C9.31667 19.7167 7.3125 17.5958 5.9875 15.6375C4.6625 13.6792 4 11.8667 4 10.2C4 7.7 4.80417 5.70833 6.4125 4.225C8.02083 2.74167 9.88333 2 12 2H12.5C12.6667 2 12.8333 2.01667 13 2.05V4.075C12.8333 4.04167 12.6708 4.02083 12.5125 4.0125C12.3542 4.00417 12.1833 4 12 4C10.3167 4 8.89583 4.57917 7.7375 5.7375C6.57917 6.89583 6 8.38333 6 10.2C6 11.3833 6.49167 12.7375 7.475 14.2625C8.45833 15.7875 9.96667 17.4833 12 19.35C14.0333 17.4833 15.5417 15.7875 16.525 14.2625C17.5083 12.7375 18 11.3833 18 10.2V10H20V10.2C20 11.8667 19.3375 13.6792 18.0125 15.6375C16.6875 17.5958 14.6833 19.7167 12 22ZM12 12C12.55 12 13.0208 11.8042 13.4125 11.4125C13.8042 11.0208 14 10.55 14 10C14 9.45 13.8042 8.97917 13.4125 8.5875C13.0208 8.19583 12.55 8 12 8C11.45 8 10.9792 8.19583 10.5875 8.5875C10.1958 8.97917 10 9.45 10 10C10 10.55 10.1958 11.0208 10.5875 11.4125C10.9792 11.8042 11.45 12 12 12ZM18 8H20V5H23V3H20V0H18V3H15V5H18V8Z" fill="currentColor"/>
-                    </g>
-                  </svg>
             </div>
+
 
         </div>
 
@@ -157,6 +180,49 @@
         </div>
 
     </div>
+    <script>
+        const itemTab = document.querySelectorAll('.tab-item');
+
+        function activeTab() {
+            itemTab.forEach((tab) => tab.classList.remove('active-tab'));
+            this.classList.add('active-tab');
+        }
+
+        itemTab.forEach((tab) => tab.addEventListener('click', activeTab));
+
+
+        // pop up when click geofencing
+        const toggleSwitch = document.getElementById('toggleSwitch');
+        const popupContainer = document.getElementById('popupContainer');
+
+        toggleSwitch.addEventListener('change', function () {
+
+            if (this.checked) {
+
+                popupContainer.style.display = 'flex';
+            } else {
+
+                popupContainer.style.display = 'none';
+            }
+        });
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const slider = document.getElementById('radiusSlider');
+            const sliderValueDisplay = document.getElementById('sliderValue');
+            const confirmBtn = document.getElementById('confirmBtn');
+        
+            // Update the displayed value when the slider value changes
+            slider.addEventListener('input', function () {
+                const value = this.value;
+                sliderValueDisplay.textContent = value + 'm';
+            });
+            confirmBtn.addEventListener('click', function () {
+                popupContainer.style.display = 'none';
+            });
+        });
+        
+
+    </script>
     <script src="main.js"></script>
     <script src="darkmode.js"></script>
 </body>

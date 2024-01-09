@@ -24,6 +24,8 @@ body {
     --inactive: rgb(108, 112, 114, 60%);
     --bg-1: #F7F9FA;
     --bg-2: #FBFBFB;
+    --tab-bg: #F2F4F5;
+    --tab-hover: #FFFFFF;
     /* font-size */
     --heading: 1.5rem;
     --big-heading: 2rem;
@@ -42,6 +44,8 @@ body {
     --sub-text-color: #cacaca;
     --bg-1: #1c1c1c;
     --bg-2: #1c1c1c;
+    --tab-bg: #202325;
+    --tab-hover: #303437;
     --box-shadow: 0 0 2px var(--primary-color);
 }
 
@@ -686,8 +690,9 @@ input:checked+.slider:before {
     margin-top: 0;
 }
 
+/* model box pop up */
 .modal {
-   
+
     position: fixed;
     bottom: -100%;
     left: 0;
@@ -703,16 +708,17 @@ input:checked+.slider:before {
 .modal-content {
     position: relative;
     padding: 20px;
-    width:calc(100% - 40px);
+    width: calc(100% - 40px);
 }
-.modal-content .close-btn{
+
+.modal-content .close-btn {
     position: absolute;
     right: 5%;
     top: 5%;
     padding: 0.5em;
     border-radius: 50%;
     background-color: var(--bg-2);
-    box-shadow: 0px 0px 0px 1px rgba(0,0,0,0.1);
+    box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.1);
 }
 
 .modal-trigger {
@@ -722,3 +728,93 @@ input:checked+.slider:before {
 .modal-trigger:hover {
     text-decoration: underline;
 }
+
+/* tab item */
+.tab-item {
+    padding: 1em 1.5em 1em 1.5em;
+    width: calc(100% - 3em);
+    cursor: pointer;
+    border-radius: 0.5em;
+
+}
+@media  screen and (max-width:400px) {
+    .tab-item {
+        padding: 1em 1.2em 1em 1.2em;
+        font-size: 0.875rem;
+    } 
+}
+
+.tab-item.active-tab{
+    background-color: var(--tab-hover);
+
+}
+.popup-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+  background-color: var(--bg-color);
+   padding: 1.5em;
+   width: 85%;
+
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.scale {
+    width: 100%;
+    height: 20px;
+
+    position: relative;
+    background: linear-gradient(to right, transparent 0%, transparent 10%, #ccc 10%, #ccc 30%, transparent 30%, transparent 40%, #ccc 40%, #ccc 60%, transparent 60%, transparent 80%, #ccc 80%, #ccc 100%);
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+/* Style for the draggable handle */
+.scale::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-color: var(--primary-color);
+    position: absolute;
+    top: 0;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    cursor: grab;
+}
+
+.scale:hover::before {
+    background-color: var(--primary-color);
+}
+
+.scale::after {
+    content: "10";
+    position: absolute;
+    top: 30px;
+    left: 0;
+}
+
+
+.slider-value {
+    
+    text-align: center;
+    margin-top: -10px; /* Adjust as needed */
+}
+.save-btn{
+    padding: 0.8em;
+    background-color: var(--primary-color);
+    color: #FFFFFF;
+    width: 30%;
+    margin: auto;
+    border-radius: 1rem;
+}
+
