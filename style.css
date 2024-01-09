@@ -764,7 +764,6 @@ input:checked+.slider:before {
   background-color: var(--bg-color);
    padding: 1.5em;
    width: 85%;
-
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
@@ -772,14 +771,11 @@ input:checked+.slider:before {
 .scale {
     width: 100%;
     height: 20px;
-
     position: relative;
     background: linear-gradient(to right, transparent 0%, transparent 10%, #ccc 10%, #ccc 30%, transparent 30%, transparent 40%, #ccc 40%, #ccc 60%, transparent 60%, transparent 80%, #ccc 80%, #ccc 100%);
     border-radius: 5px;
     margin-top: 10px;
 }
-
-/* Style for the draggable handle */
 .scale::before {
     content: "";
     width: 20px;
@@ -791,23 +787,18 @@ input:checked+.slider:before {
     border-radius: 50%;
     cursor: grab;
 }
-
 .scale:hover::before {
     background-color: var(--primary-color);
 }
-
 .scale::after {
     content: "10";
     position: absolute;
     top: 30px;
     left: 0;
 }
-
-
 .slider-value {
-    
     text-align: center;
-    margin-top: -10px; /* Adjust as needed */
+    margin-top: -0.625rem; 
 }
 .save-btn{
     padding: 0.8em;
@@ -818,3 +809,11 @@ input:checked+.slider:before {
     border-radius: 1rem;
 }
 
+/* login dropdown */
+.country-code-dropdown select{
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    outline: none;
+    border: none;
+    font-size: var(--f-14);
+}
