@@ -57,18 +57,18 @@
             <!-- 4 tabs view,setting,preview,visits -->
             <div class="flex center padding" style="padding-top: 0;padding-bottom:0;">
                 <div class="flex middle center" style="background:var(--bg-1);border-radius: 0.5em;">
+                    <a href="" class="flex center middle tab-item active-tab">
+                        visits
+                    </a>
+                    <a href="" class="flex center middle tab-item ">
+                        setting
+                    </a>
                     <a href="" class="flex center middle tab-item ">
                         view
                     </a>
-                    <a href="" class="flex center middle tab-item active-tab">
-                        setting
-                    </a>
                     <a href="" class="flex center middle tab-item">
                         preview
-                    </a>
-                    <a href="" class="flex center middle tab-item">
-                        visits
-                    </a>
+                    </a>  
                 </div>
             </div>
 
@@ -80,8 +80,28 @@
                     <span class="slider round"></span>
                 </label>
             </div>
+            <div class="flex middle between box-model">
+                <div class="flex s-gap">
+                    <h3>Geofencing</h3>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <mask id="mask0_441_2797" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0"
+                            width="20" height="20">
+                            <rect width="20" height="20" fill="currentColor" />
+                        </mask>
+                        <g mask="url(#mask0_441_2797)">
+                            <path
+                                d="M9.16663 14.1667H10.8333V9.16666H9.16663V14.1667ZM9.99996 7.49999C10.2361 7.49999 10.434 7.42013 10.5937 7.26041C10.7534 7.10068 10.8333 6.90277 10.8333 6.66666C10.8333 6.43055 10.7534 6.23263 10.5937 6.07291C10.434 5.91318 10.2361 5.83332 9.99996 5.83332C9.76385 5.83332 9.56593 5.91318 9.40621 6.07291C9.24649 6.23263 9.16663 6.43055 9.16663 6.66666C9.16663 6.90277 9.24649 7.10068 9.40621 7.26041C9.56593 7.42013 9.76385 7.49999 9.99996 7.49999ZM9.99996 18.3333C8.84718 18.3333 7.76385 18.1146 6.74996 17.6771C5.73607 17.2396 4.85413 16.6458 4.10413 15.8958C3.35413 15.1458 2.76038 14.2639 2.32288 13.25C1.88538 12.2361 1.66663 11.1528 1.66663 9.99999C1.66663 8.84721 1.88538 7.76388 2.32288 6.74999C2.76038 5.7361 3.35413 4.85416 4.10413 4.10416C4.85413 3.35416 5.73607 2.76041 6.74996 2.32291C7.76385 1.88541 8.84718 1.66666 9.99996 1.66666C11.1527 1.66666 12.2361 1.88541 13.25 2.32291C14.2638 2.76041 15.1458 3.35416 15.8958 4.10416C16.6458 4.85416 17.2395 5.7361 17.677 6.74999C18.1145 7.76388 18.3333 8.84721 18.3333 9.99999C18.3333 11.1528 18.1145 12.2361 17.677 13.25C17.2395 14.2639 16.6458 15.1458 15.8958 15.8958C15.1458 16.6458 14.2638 17.2396 13.25 17.6771C12.2361 18.1146 11.1527 18.3333 9.99996 18.3333Z"
+                                fill="#00C2FF" />
+                        </g>
+                    </svg>
+                </div>
+                <label class="switch">
+                    <input type="checkbox" id="toggleSwitch" checked>
+                    <span class="slider round"></span>
+                </label>
+            </div>
             <div class="flex middle between padding  bg-2">
-                <h3>Allowed to call</h3>
+                <h3>DND <span style="color: var(--inactive);">(No Calls)</span></h3>
                 <label class="switch">
                     <input type="checkbox" checked>
                     <span class="slider round"></span>
@@ -89,7 +109,7 @@
             </div>
 
 
-            <!-- <div class="flex column gap middle padding bg-2">
+             <div class="flex column gap middle padding bg-2">
                 <div class="flex between middle" style="width: 100%;">
                     <h3>Start</h3>
                     <div class="flex middle s-gap">
@@ -124,46 +144,18 @@
                     </div>
                 </div>
 
-            </div> -->
-            <div class="flex middle between box-model">
-                <div class="flex s-gap">
-                    <h3>Geofencing</h3>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                        <mask id="mask0_441_2797" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0"
-                            width="20" height="20">
-                            <rect width="20" height="20" fill="currentColor" />
-                        </mask>
-                        <g mask="url(#mask0_441_2797)">
-                            <path
-                                d="M9.16663 14.1667H10.8333V9.16666H9.16663V14.1667ZM9.99996 7.49999C10.2361 7.49999 10.434 7.42013 10.5937 7.26041C10.7534 7.10068 10.8333 6.90277 10.8333 6.66666C10.8333 6.43055 10.7534 6.23263 10.5937 6.07291C10.434 5.91318 10.2361 5.83332 9.99996 5.83332C9.76385 5.83332 9.56593 5.91318 9.40621 6.07291C9.24649 6.23263 9.16663 6.43055 9.16663 6.66666C9.16663 6.90277 9.24649 7.10068 9.40621 7.26041C9.56593 7.42013 9.76385 7.49999 9.99996 7.49999ZM9.99996 18.3333C8.84718 18.3333 7.76385 18.1146 6.74996 17.6771C5.73607 17.2396 4.85413 16.6458 4.10413 15.8958C3.35413 15.1458 2.76038 14.2639 2.32288 13.25C1.88538 12.2361 1.66663 11.1528 1.66663 9.99999C1.66663 8.84721 1.88538 7.76388 2.32288 6.74999C2.76038 5.7361 3.35413 4.85416 4.10413 4.10416C4.85413 3.35416 5.73607 2.76041 6.74996 2.32291C7.76385 1.88541 8.84718 1.66666 9.99996 1.66666C11.1527 1.66666 12.2361 1.88541 13.25 2.32291C14.2638 2.76041 15.1458 3.35416 15.8958 4.10416C16.6458 4.85416 17.2395 5.7361 17.677 6.74999C18.1145 7.76388 18.3333 8.84721 18.3333 9.99999C18.3333 11.1528 18.1145 12.2361 17.677 13.25C17.2395 14.2639 16.6458 15.1458 15.8958 15.8958C15.1458 16.6458 14.2638 17.2396 13.25 17.6771C12.2361 18.1146 11.1527 18.3333 9.99996 18.3333Z"
-                                fill="#00C2FF" />
-                        </g>
-                    </svg>
-                </div>
-                <label class="switch">
-                    <input type="checkbox" id="toggleSwitch" checked>
-                    <span class="slider round"></span>
-                </label>
-            </div>
+            </div> 
+         
             <div id="popupContainer" class="popup-container">
                 <!-- popup content -->
                 <div class="popup-content">
                     <div class="flex middle between padding bg-1" style="border-bottom: 1px solid var(--border-color);">
                         <div class="flex column s-gap ">
                             <h3>Set Location</h3>
+                            <img src="/assets/img/maps.png" alt="">
                             <span>Parim Vihar, VR layour, Del...</span>
                         </div>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                            <mask id="mask0_441_2806" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0"
-                                width="24" height="24">
-                                <rect width="24" height="24" fill="currentColor" />
-                            </mask>
-                            <g mask="url(#mask0_441_2806)">
-                                <path
-                                    d="M12 22C9.31667 19.7167 7.3125 17.5958 5.9875 15.6375C4.6625 13.6792 4 11.8667 4 10.2C4 7.7 4.80417 5.70833 6.4125 4.225C8.02083 2.74167 9.88333 2 12 2H12.5C12.6667 2 12.8333 2.01667 13 2.05V4.075C12.8333 4.04167 12.6708 4.02083 12.5125 4.0125C12.3542 4.00417 12.1833 4 12 4C10.3167 4 8.89583 4.57917 7.7375 5.7375C6.57917 6.89583 6 8.38333 6 10.2C6 11.3833 6.49167 12.7375 7.475 14.2625C8.45833 15.7875 9.96667 17.4833 12 19.35C14.0333 17.4833 15.5417 15.7875 16.525 14.2625C17.5083 12.7375 18 11.3833 18 10.2V10H20V10.2C20 11.8667 19.3375 13.6792 18.0125 15.6375C16.6875 17.5958 14.6833 19.7167 12 22ZM12 12C12.55 12 13.0208 11.8042 13.4125 11.4125C13.8042 11.0208 14 10.55 14 10C14 9.45 13.8042 8.97917 13.4125 8.5875C13.0208 8.19583 12.55 8 12 8C11.45 8 10.9792 8.19583 10.5875 8.5875C10.1958 8.97917 10 9.45 10 10C10 10.55 10.1958 11.0208 10.5875 11.4125C10.9792 11.8042 11.45 12 12 12ZM18 8H20V5H23V3H20V0H18V3H15V5H18V8Z"
-                                    fill="currentColor" />
-                            </g>
-                        </svg>
+                       
                     </div>
                     <div class="flex column s-gap padding bg-1">
                         <h3>Radius</h3>
@@ -172,7 +164,10 @@
 <!-- 
                         <p id="sliderValue">10m</p> -->
                     </div>
-                    <div class="text-center save-btn"  id="confirmBtn">confirm</div>
+                    <div class="flex gap-1 center">
+                        <div class="text-center button p-1"  id="confirmBtn" >cancel</div>
+                        <div class="text-center button p-1"  id="confirmBtn">confirm</div>
+                    </div>
 
 
                 </div>

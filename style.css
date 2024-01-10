@@ -763,7 +763,7 @@ input:checked+.slider:before {
 .popup-content {
   background-color: var(--bg-color);
    padding: 1.5em;
-   width: 85%;
+   max-width: 80%;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
@@ -817,3 +817,4 @@ input:checked+.slider:before {
     border: none;
     font-size: var(--f-14);
 }
+/* four button */
