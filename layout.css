@@ -34,6 +34,9 @@
 .flex.top{
     align-items: start;
 }
+.flex.end{
+    align-items: end;
+}
 .flex.eq>*, .flex-1{
     flex: 1;
     width: 1px;

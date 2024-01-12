@@ -671,6 +671,10 @@ input:checked+.slider:before {
     position: relative;
     padding: 0 1.5rem 0 1.5rem;
     height: 3.625rem;
+    align-items: center;
+}
+.message-box:hover{
+    background-color: var(--bg-1);
 }
 
 .message-box p {
@@ -682,7 +686,7 @@ input:checked+.slider:before {
 
 .message-time {
     position: absolute;
-    top: 5%;
+    top: 7%;
     right: 5%;
 }
 
@@ -818,3 +822,49 @@ input:checked+.slider:before {
     font-size: var(--f-14);
 }
 /* four button */
+
+.sender,
+.receiver {
+    max-width: 99%;
+    line-height: 1.3em;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+
+
+.sender {
+    flex-direction: row-reverse;
+    justify-content: end;
+    align-items: flex-start;
+    max-width: 50%;
+    margin-left: auto;
+
+}
+
+
+.receiver {
+    justify-content: flex-start;
+    align-items: flex-start;
+    max-width: 50%;
+    margin-right: auto;
+
+}
+
+.receiver-text {
+    padding: 1em;
+    background-color: var(--bg-1);
+    border-top-right-radius: 1em;
+    border-bottom-right-radius: 1em;
+    border-bottom-left-radius: 1em;
+}
+
+.sender-text {
+    padding: 1em;
+    background-color: var(--primary-color);
+    border-bottom-right-radius: 1em;
+    border-bottom-left-radius: 1em;
+    border-top-left-radius: 1em;
+    color: #FFFFFF;
+}
+
