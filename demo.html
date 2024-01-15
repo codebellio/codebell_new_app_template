@@ -9,10 +9,13 @@
     <link rel="stylesheet" href="layout.css">
     <link rel="stylesheet" href="/assets/swiper-bundle.css">
     <script src="/assets/swiper-bundle.min.js"></script>
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
 <body>
-    <div class="container flex column center gap" style="padding: 0;height:calc(100% - 5.15em)">
+    <div class="container flex column center gap" style="padding: 0;height:calc(100% - 5.15em);">
+        <!-- Header -->
         <div class="flex between middle padding ">
             <a href="setting.html" class="flex gap middle ">
                 <div class="profile-img flex middle">
@@ -52,19 +55,287 @@
                 </div>
             </div>
         </div>
-        <div class="flex padding" style="background:var(--bg-1);">
-            <p>You can share Codebell ID or can show QR code to connect with other people</p>
-        </div>
-        <div class="flex center  gap middle-contents" style="flex:1;">
-                    
+      <div style="flex: 1;">
+        <div  class="page-hide animate__fadeInRight" id="page1">
+            <div class="flex padding " style="background:var(--bg-1);">
+              <p>You can share Codebell ID or can show QR code to connect with other people</p>
+            </div>
+          </div>
+        
+          <div class="page-hide animate__fadeInRight" id="page2">
+            <div class="padding middle-contents" style="flex:1;" >
+                <div class=" flex gap wrap space-around">
+                 <a href="codebell.html" class="flex padding device-box">
+                     <div class="device-no">
+                         01
+                     </div>
+                     <div class="flex column  device-item">
+                         <h2>Profile QR</h2>
+                         <p>Inactive</p>
+                     </div>
+                 </a>
+                 <a href="codebell.html" class="flex padding device-box active-device">
+                     <div class="device-no">
+                         02
+                     </div>
+                     <div class="flex column  device-item">
+                         <h2>Home Codebell</h2>
+                         <p>Active</p>
+                     </div>
+                 </a>
+                 <a href="codebell.html" class="flex padding device-box active-device">
+                     <div class="device-no">
+                         03
+                     </div>
+                     <div class="flex column  device-item">
+                         <h2>Car Codebell</h2>
+                         <p>Active</p>
+                     </div>
+                 </a>
+                 <a href="codebell.html" class="flex padding device-box">
+                     <div class="device-no">
+                         04
+                     </div>
+                     <div class="flex column  device-item">
+                         <h2>Laptop Tag</h2>
+                         <p>Inactive</p>
+                     </div>
+                 </a>
+                 <a href="codebell.html" class="flex padding device-box">
+                     <div class="device-no">
+                         05
+                     </div>
+                     <div class="flex column  device-item">
+                         <h2>Dating</h2>
+                         <p>Inactive</p>
+                     </div>
+                 </a>
+                 <div class="flex padding device-box">
+                     <div class="device-no">
+                         +
+                     </div>
+                     <div class="flex column  device-item">
+                         <h2>Add new</h2>
+                         <p>Add a Codebell</p>
+                     </div>
+                 </div>
+             </div>
+     
+         </div>
+          </div>
 
+          <!-- visitor -->
+          <div  class="page-hide animate__fadeInRight" id="page3">
+            <div class="flex column gap box-model">
+                <div class="flex middle   message-search">
+                    <svg style="margin-right: 0.5em;" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                        viewBox="0 0 16 16" fill="none">
+                        <path
+                            d="M13.3334 13.3333L10.7556 10.7556M12.1482 7.40741C12.1482 10.0256 10.0257 12.1481 7.40749 12.1481C4.78925 12.1481 2.66675 10.0256 2.66675 7.40741C2.66675 4.78917 4.78925 2.66667 7.40749 2.66667C10.0257 2.66667 12.1482 4.78917 12.1482 7.40741Z"
+                            stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <input type="text" placeholder="Search" style="font-size: 1rem;
+                    font-style: normal;
+                    font-weight: 400;">
+                </div>
+            </div>
+            <div class="flex column gap-2 middle-contents" style="flex:1;margin-top:1rem">
+                <div class="flex between middle message-box ">
+                    <div class="flex gap ">
+                        <img src="/assets/img/Avatar.png" alt="">
+                        <div class="flex column" style="gap:0.3rem">
+                            <p>Peter Landt </p>
+                            <p style="font-size: 0.875rem;font-style: normal;font-weight: 700;">Codebell Car</p>
+                        </div>
+                    </div>
+                    <div class="message-time flex">
+                        <p> 4:20 PM</p>
+                    </div>
+                </div>
+                <div class="flex between message-box ">
+                    <div class="flex gap ">
+                        <img src="/assets/img/Avatar-1.png" alt="">
+                        <div class="flex column" style="gap:0.3rem">
+                            <p>Peter Landt </p>
+                            <p style="font-size: 0.875rem;font-style: normal;font-weight: 700;">Codebell Car</p>
+                        </div>
+                    </div>
+                    <div class="message-time flex">
+                        <p>4 Mar</p>
+                    </div>
+                </div>
+                <div class="flex between  message-box ">
+                    <div class="flex gap ">
+                        <img src="/assets/img/Avatar-2.png" alt="">
+                        <div class="flex column" style="gap:0.3rem">
+                            <p>Peter Landt </p>
+                            <p style="font-size: 0.875rem;font-style: normal;font-weight: 700;">Codebell Car</p>
+                        </div>
+                    </div>
+                    <div class="message-time flex">
+                        <p> 4:20 PM</p>
+                    </div>
+                </div>
+          
+                <div class="flex between  message-box ">
+                    <div class="flex gap ">
+                        <img src="/assets/img/Avatar-4.png" alt="">
+                        <div class="flex column" style="gap:0.3rem">
+                            <p>Unknown User</p>
+                            <p style="font-size: 0.875rem;font-style: normal;font-weight: 700;">Codebell Home</p>
+                        </div>
+                    </div>
+                    <div class="message-time flex">
+                        <p> 4:20 PM</p>
+                    </div>
+                </div>
+         
+                <div class="flex between  message-box ">
+                    <div class="flex gap ">
+                        <img src="/assets/img/Avatar-4.png" alt="">
+                        <div class="flex column" style="gap:0.3rem">
+                            <p>Victoria Hanson</p>
+                            <p style="font-size: 0.875rem;font-style: normal;font-weight: 700;">Codebell Home</p>
+                        </div>
+                    </div>
+                    <div class="message-time flex">
+                        <p> 4:20 PM</p>
+                    </div>
+                </div>
+
+        
+                <div class="flex between  message-box ">
+                    <div class="flex gap ">
+                        <img src="/assets/img/Avatar-4.png" alt="">
+                        <div class="flex column" style="gap:0.3rem">
+                            <p>Victoria Hanson</p>
+                            <p style="font-size: 0.875rem;font-style: normal;font-weight: 700;">Codebell Home</p>
+                        </div>
+                    </div>
+                    <div class="message-time flex">
+                        <p> 4:20 PM</p>
+                    </div>
+                </div>
+              
+            </div>
+          </div>
+
+          <!-- message -->
+          <div  class="page-hide animate__fadeInRight" id="page4">
+            <div class="flex column gap box-model">
+                <div class="flex middle   message-search">
+                    <svg style="margin-right: 0.5em;" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                        viewBox="0 0 16 16" fill="none">
+                        <path
+                            d="M13.3334 13.3333L10.7556 10.7556M12.1482 7.40741C12.1482 10.0256 10.0257 12.1481 7.40749 12.1481C4.78925 12.1481 2.66675 10.0256 2.66675 7.40741C2.66675 4.78917 4.78925 2.66667 7.40749 2.66667C10.0257 2.66667 12.1482 4.78917 12.1482 7.40741Z"
+                            stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <input type="text" placeholder="Search" style="font-size: 1rem;
+                    font-style: normal;
+                    font-weight: 400;">
+                </div>
+            </div>
+            <div class="flex column gap-2 middle-contents" style="flex:1;margin-top:1rem">
+                <a href="chat.html" class="flex between middle message-box ">
+                    <div class="flex gap ">
+                        <img src="/assets/img/Avatar.png" alt="">
+    
+    
+                        <div class="flex column" style="gap:0.3rem">
+                            <p>Peter Landt </p>
+                            <p  style="font-size: 0.875rem;color:#6C7072">Respected Sir, I want product demo...</p>
+                        </div>
+                    </div>
+                    <div class="message-time flex">
+                        <p> 4:20 PM</p>
+                    </div>
+                </a>
+                <a href="chat.html" class="flex between message-box ">
+                    <div class="flex gap ">
+                        <img src="/assets/img/Avatar-1.png" alt="">
+                        <div class="flex column" style="gap:0.3rem">
+                            <p>Peter Landt </p>
+                            <p style="font-size: 0.875rem;color:#6B4EFF">Visited</p>
+                        </div>
+                    </div>
+                    <div class="message-time flex">
+                        <p>4 Mar</p>
+                    </div>
+                </a>
+                <a href="chat.html" class="flex between  message-box ">
+                    <div class="flex gap ">
+                        <img src="/assets/img/Avatar-2.png" alt="">
+                        <div class="flex column" style="gap:0.3rem">
+                            <p>Peter Landt </p>
+                            <p style="font-size: 0.875rem;color:#6C7072">Respected Sir, I want product demo...</p>
+                        </div>
+                    </div>
+                    <div class="message-time flex">
+                        <p> 4:20 PM</p>
+                    </div>
+                </a>
+                <a href="chat.html" class="flex between  message-box ">
+                    <div class="flex gap ">
+                        <img src="/assets/img/Avatar-3.png" alt="">
+                        <div class="flex column" style="gap:0.3rem">
+                            <p>Janice Nelson </p>
+                            <p style="font-size: 0.875rem;color:#6C7072">Respected Sir, I want product demo...</p>
+                        </div>
+                    </div>
+                    <div class="message-time flex">
+                        <p> 4:20 PM</p>
+                    </div>
+                </a>
+                <a href="chat.html" class="flex between  message-box ">
+                    <div class="flex gap ">
+                        <img src="/assets/img/Avatar-4.png" alt="">
+                        <div class="flex column" style="gap:0.3rem">
+                            <p>Unknown User</p>
+                            <p style="font-size: 0.875rem;color:#10992E">Called You</p>
+                        </div>
+                    </div>
+                    <div class="message-time flex">
+                        <p> 4:20 PM</p>
+                    </div>
+                </a>
+                <a href="chat.html" class="flex between  message-box ">
+                    <div class="flex gap ">
+                        <img src="/assets/img/Avatar-4.png" alt="">
+                        <div class="flex column" style="gap:0.3rem">
+                            <p>Victoria Hanson</p>
+                            <p style="font-size: 0.875rem;color:#B41616">Missed call</p>
+                        </div>
+                    </div>
+                    <div class="message-time flex">
+                        <p> 4:20 PM</p>
+                    </div>
+                </a>
+                <a href="chat.html" class="flex between  message-box ">
+                    <div class="flex gap ">
+                        <img src="/assets/img/Avatar-4.png" alt="">
+                        <div class="flex column" style="gap:0.3rem">
+                            <p>Victoria Hanson</p>
+                            <p style="font-size: 0.875rem;color:#B41616">Missed call</p>
+                        </div>
+                    </div>
+                    <div class="message-time flex">
+                        <p> 4:20 PM</p>
+                    </div>
+                </a>
+            </div>
+          </div>
+        
+         
         </div>
     </div>
+</div>
 
+
+    <!-- Footer -->
     <div class="footer">
         <div class=" flex middle center  navigation">
             <div class="flex item-list">
-                <div class="flex column middle item active">
+                <div onclick="togglePage('page1')" class="flex column middle item active ">
                     <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23"
                         fill="none">
                         <path
@@ -73,7 +344,7 @@
                     </svg>
                     <p>Home</p>
                 </div>
-                <a href="codebells.html" class="flex column middle item">
+                <div onclick="togglePage('page2')"  class="flex column middle item">
                     <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor"
                         class="bi bi-stack" viewBox="0 0 16 16">
                         <path
@@ -82,7 +353,7 @@
                             d="m14.12 6.576 1.715.858c.22.11.22.424 0 .534l-7.568 3.784a.6.6 0 0 1-.534 0L.165 7.968a.299.299 0 0 1 0-.534l1.716-.858 5.317 2.659c.505.252 1.1.252 1.604 0z" />
                     </svg>
                     <p>Codebells</p>
-                </a>
+                </div>
                 <div class="flex column middle scan_now item ">
                     <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28"
                         fill="none">
@@ -99,7 +370,7 @@
                     <p style="white-space: nowrap;">Scan now</p>
                 </div>
 
-                <a href="visitor.html" class="flex column middle item">
+                <div onclick="togglePage('page3')" class="flex column middle item">
                     <svg class="icon" width="23" height="23" viewBox="0 0 22 22" fill="currentColor"
                         xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -107,8 +378,8 @@
                             fill="currentColor"></path>
                     </svg>
                     <p class="text">History</p>
-                </a>
-                <a href="message.html" class="flex column middle item">
+                </div>
+                <div onclick="togglePage('page4')" class="flex column middle item">
                     <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor"
                         class="bi bi-chat-left-text" viewBox="0 0 16 16">
                         <path
@@ -117,13 +388,35 @@
                             d="M3 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5M3 6a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 6m0 2.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5" />
                     </svg>
                     <p>Message</p>
-                </a>
+                </div>
                 <div class="indicator"></div>
             </div>
         </div>
     </div>
 
-
+    <script>
+        function togglePage(pageId) {
+          // Hide all pages
+          var pages = document.querySelectorAll('.page-hide');
+          pages.forEach(function (page) {
+            page.style.display = 'none';
+          });
+      
+          // Remove 'current' class from all navbar items
+          var navbarItems = document.querySelectorAll('.navbar-item');
+          navbarItems.forEach(function (item) {
+            item.classList.remove('current');
+          });
+      
+          // Show the selected page
+          var selectedPage = document.getElementById(pageId);
+          selectedPage.style.display = 'initial';
+      
+          // Add 'current' class to the clicked navbar item
+          var clickedNavItem = document.querySelector('[onclick="togglePage(\'' + pageId + '\')"]');
+          clickedNavItem.classList.add('current');
+        }
+      </script>
     <script>
         const item = document.querySelectorAll('.item');
         function activeLink() {

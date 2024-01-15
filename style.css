@@ -868,3 +868,6 @@ input:checked+.slider:before {
     color: #FFFFFF;
 }
 
+.page-hide{
+display: none;
+}
