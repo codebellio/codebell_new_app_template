@@ -384,7 +384,7 @@ input::placeholder {
     margin-top: 1em;
     border-radius: 1.125rem;
 border: 1px solid var(--primary-color, #2F8AB2);
-background: var(--bg-color);
+background: #FFF;
 box-shadow: 4px 6px 25px 7px rgba(0, 0, 0, 0.15);
 }
 
