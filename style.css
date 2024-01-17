@@ -120,7 +120,10 @@ h3 {
     white-space: nowrap;
 
 }
-
+.outline-button{
+    border-radius: 2em;
+    border: 1px solid var(--primary-color);
+}
 input {
     border: none;
     outline: none;
