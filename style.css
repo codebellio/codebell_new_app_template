@@ -760,6 +760,7 @@ input:checked+.slider:before {
     cursor: pointer;
 }
 
+
 .modal-trigger:hover {
     text-decoration: underline;
 }
@@ -906,23 +907,57 @@ border-left: none;
 .receiver-text {
     padding: 1em;
     background-color: var(--bg-1);
-    border-top-right-radius: 1em;
-    border-bottom-right-radius: 1em;
-    border-bottom-left-radius: 1em;
+    border-top-right-radius: 1.5em;
+    border-bottom-right-radius: 1.5em;
+    border-bottom-left-radius: 1.5em;
 }
 
 .sender-text {
     padding: 1em;
     background-color: var(--primary-color);
-    border-bottom-right-radius: 1em;
-    border-bottom-left-radius: 1em;
-    border-top-left-radius: 1em;
+    border-bottom-right-radius: 1.5em;
+    border-bottom-left-radius: 1.5em;
+    border-top-left-radius: 1.5em;
     color: #FFFFFF;
+}
+.sender-text.sender-img {
+
+    background: none;
+    border: 1px solid var(--border-color);
+   
+   
+}
+.sender-text.sender-document,.receiver-text.receiver-document    {
+    display: flex;
+    flex-direction: row;
+    white-space: nowrap;
+    align-items: center;
+    gap: 0.5em;
+    border: 1px solid var(--border-color);
+     
+}
+.receiver-text.receiver-document{
+    display: flex;
+    flex-direction: row;
+}
+.sender-document span{
+    font-size: 0.90em;
+    color: #FFF;
+}
+.receiver-document span{
+    font-size: 0.90em;
+    color: var(--text-color);
+}
+.chat-btn{
+    padding: 0.5em;
+background-color: var(--bg-2);
+border-radius: 0.5em;
+border: 1px solid var(--border-color);
 }
 
 .page-hide{
 display: none;
-}
+} 
 
 /* common dropdown */
 .dropdown-holder {
@@ -930,20 +965,26 @@ display: none;
 }
 
 .dropdown {
-    
     position: absolute;
     top: 100%;
     right: 0;
-   
     background-color: var(--dropdown);
     border-radius: 10px;
     box-shadow:  rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
     z-index: 9999;
-    padding: 1em;
+  
     font-weight: 500;
     white-space: nowrap;
     display: none;
 }
+.dropdown p{
+    padding: 0.5em 1.2em 0.5em 1.2em;
+    border-radius: 0.5em;
+}
+.dropdown p:hover{
+    background-color: var(--tab-bg);
+}
+
 
 .dropdown-trigger:focus + .dropdown,
 .dropdown-trigger:hover + .dropdown,
