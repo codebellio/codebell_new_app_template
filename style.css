@@ -656,17 +656,19 @@ input:checked+.slider:before {
 .notification-box {
     padding-right: 1.5rem;
     padding-left: 1.5rem;
-    height: 4rem;
+    height: 4.5em;
 
     position: relative;
     border-bottom: 1px solid var(--border-color)
 }
-
+.notification-box:hover{
+    background: var(--bg-1);
+}
 .notification-box p {
     font-size: 1rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 1rem;
+    line-height: 1.5rem;
 }
 
 .notification-box span {
