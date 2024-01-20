@@ -337,7 +337,7 @@ input::placeholder {
     left: -20px;
     background: transparent;
     border-top-right-radius: 1.5rem;
-    box-shadow: 1px -10px 0 0 var(--bg-color);
+    /* box-shadow: 1px -10px 0 0 var(--bg-color); */
 }
 
 .indicator::after {
@@ -349,7 +349,7 @@ input::placeholder {
     right: -20px;
     background: transparent;
     border-top-left-radius: 1.5rem;
-    box-shadow: -1px -10px 0 0 var(--bg-color);
+    /* box-shadow: -1px -10px 0 0 var(--bg-color); */
 }
 
 .navigation .item-list .item:nth-child(1).active~.indicator {
