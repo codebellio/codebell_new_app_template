@@ -910,17 +910,17 @@ border-left: none;
 .receiver-text {
     padding: 1em;
     background-color: var(--bg-1);
-    border-top-right-radius: 1.5em;
-    border-bottom-right-radius: 1.5em;
-    border-bottom-left-radius: 1.5em;
+    border-top-right-radius: 1em;
+    border-bottom-right-radius: 1em;
+    border-bottom-left-radius: 1em;
 }
 
 .sender-text {
     padding: 1em;
     background-color: var(--primary-color);
-    border-bottom-right-radius: 1.5em;
-    border-bottom-left-radius: 1.5em;
-    border-top-left-radius: 1.5em;
+    border-bottom-right-radius: 1em;
+    border-bottom-left-radius: 1em;
+    border-top-left-radius: 1em;
     color: #FFFFFF;
 }
 .sender-text.sender-img {
@@ -936,7 +936,7 @@ border-left: none;
     white-space: nowrap;
     align-items: center;
     gap: 0.5em;
-    border: 1px solid var(--border-color);
+    /* border: 1px solid var(--border-color); */
      
 }
 .receiver-text.receiver-document{
