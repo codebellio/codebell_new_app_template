@@ -994,21 +994,27 @@ display: none;
     display:block; 
      
 }
-
-.chat-send .mic {
-    display: block;
+.short-padding{
+    padding: 0.8em;
+    border-radius: 0.5em;
 }
 
-.chat-send .send {
+
+.mic-send .send {
     display: none;
+
+}
+.chat-send{
+   background: var(--bg-1);
+    border-radius: 0.5em;
 }
 
-.chat-send input:focus ~ .mic {
-    display: none;
-}
 
-.chat-send input:focus ~ .send {
+.chat-send:focus-within + .mic-send .send {
     display: flex;
+}
+.chat-send:focus-within + .mic-send .mic {
+    display: none;
 }
 
 .all-content h4 {
@@ -1031,4 +1037,56 @@ display: none;
 .under-sub {
     width: 90%;
     margin: auto;
+}
+.hover-2:hover{
+    background-color: var(--tab-bg);
+}
+.hover:hover{
+    background-color: var(--bg-1);
+}
+
+/* Dropdown container styles */
+.attachment-dropdown {
+    position: relative;
+   
+}
+
+/* Dropdown content styles */
+.dropdown-content {
+   display: none;
+    position: absolute;
+    background: var(--bg-1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    top: -220%;
+    right: 0;
+    border-radius: 0.5em;
+   
+   
+}
+.emoji-option{
+    font-size: 1.5em;
+}
+.emoji-content{
+    min-width: 250px;
+    top: -450%;
+    left: 0;
+    padding: 0.2em;
+}
+/* Dropdown item styles */
+.dropdown-content a {
+    padding: 12px 16px;
+    display: block;
+    color: var(--text-color);
+    text-decoration: none;
+    white-space: nowrap;
+    border-radius: 0.5em;
+}
+.dropdown-content a:hover{
+    background: var(--tab-bg);
+}
+
+/* Show dropdown content when hover over the attachment icon */
+.attachment-dropdown:hover .dropdown-content {
+    display: block;
 }
