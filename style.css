@@ -1010,3 +1010,25 @@ display: none;
 .chat-send input:focus ~ .send {
     display: flex;
 }
+
+.all-content h4 {
+    margin-top: 0em;
+    margin-bottom: 0em;
+    color: var(--text-color);
+    font-size: 2em;
+    line-height: 1.18em;
+    font-weight: 700;
+}
+
+.bullet {
+    color: var(--text-color);
+    display: flex;
+    align-items: start;
+    gap: 0.5em;
+    font-weight: 400;
+}
+
+.under-sub {
+    width: 90%;
+    margin: auto;
+}
