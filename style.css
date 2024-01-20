@@ -1007,6 +1007,11 @@ display: none;
 .chat-send{
    background: var(--bg-1);
     border-radius: 0.5em;
+   
+   
+}
+.chat-send input{
+    line-height: 1.5em;
 }
 
 
@@ -1066,12 +1071,14 @@ display: none;
 }
 .emoji-option{
     font-size: 1.5em;
-    padding: 0.1em;
+   padding: 5px;
     cursor: pointer;
 }
 .emoji-content{
     min-width: 280px;
-    top: -450%;
+    height: 200px;
+    overflow: auto;
+   top: -300%;
     left: 0;
     padding: 0.2em;
 }
