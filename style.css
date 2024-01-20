@@ -1067,6 +1067,7 @@ display: none;
 .emoji-option{
     font-size: 1.5em;
     padding: 0.1em;
+    cursor: pointer;
 }
 .emoji-content{
     min-width: 280px;
@@ -1082,6 +1083,7 @@ display: none;
     text-decoration: none;
     white-space: nowrap;
     border-radius: 0.5em;
+    cursor: pointer;
 }
 .dropdown-content a:hover{
     background: var(--tab-bg);
