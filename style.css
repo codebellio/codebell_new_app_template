@@ -124,6 +124,15 @@ h3 {
     font-weight: 700;
 }
 
+.list-content{
+   padding:1em;
+   width: calc(100% - 2em);
+    
+
+}
+.list-content:hover{
+    background-color: var(--bg-1);
+}
 .button {
     outline: none;
     border: none;

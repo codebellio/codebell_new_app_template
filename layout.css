@@ -73,8 +73,12 @@
     padding: 1em;
 }
 .padding-left-right{
-    padding-right: 1.5em;
-    padding-left: 1.5em;
+    padding-right: 1em;
+    padding-left: 1em;
+}
+.p-t-b{
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
 .pdt{
     padding-top: 4.5em;
