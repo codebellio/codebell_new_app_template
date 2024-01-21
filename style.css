@@ -918,10 +918,11 @@ border-left: none;
 
 .receiver-text {
     padding: 1em;
-    background-color: var(--bg-1);
+    background-color: var(--bg-color);
     border-top-right-radius: 1em;
     border-bottom-right-radius: 1em;
     border-bottom-left-radius: 1em;
+    box-shadow: var(--box-shadow);
 }
 
 .sender-text {
@@ -966,7 +967,16 @@ background-color: var(--bg-2);
 border-radius: 0.5em;
 border: 1px solid var(--border-color);
 }
-
+/* .patterns{
+    position: absolute;
+    background-color: var(--bg-1);
+   height: 85%;
+   width: 100%;
+   z-index: -10;
+opacity: 0.2;
+background-image: radial-gradient(var(--primary-color) 0.9px, var(--bg-1)  0.9px);
+background-size: 25px 25px;
+} */
 .page-hide{
 display: none;
 } 
@@ -1109,3 +1119,4 @@ display: none;
 .attachment-dropdown:hover .dropdown-content {
     display: block;
 }
+
