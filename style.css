@@ -77,9 +77,9 @@ body {
 .container {
     margin: auto;
     max-width: 800px;
-    padding: 1.5em;
-    height: calc(100% - 3em);
-    width: calc(100% -3em);
+    padding: 1em;
+    height: calc(100% - 2em);
+    /* width: calc(100% -3em); */
 }
 
 .logo svg {
