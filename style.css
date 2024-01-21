@@ -824,6 +824,16 @@ border-left: none;
 }
 
 
+.pop-up-setting{
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(  -50% , -50% );
+}
+.pop-up-setting.active-pop {
+    display: flex; /* or any other display property as needed */
+}
 @media  screen and (max-width:400px) {
     .tab-item {
         font-size: 0.875rem;
