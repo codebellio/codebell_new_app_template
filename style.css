@@ -17,6 +17,7 @@ body {
 :root {
     /* color */
     --primary-color: #0c87c9;
+    --primary-off:#0651795a;
     --bg-color: #fff;
     --text-color: #090A0A;
     --sub-text-color: #6C7072;
@@ -899,6 +900,7 @@ border-left: none;
 
 
 .sender {
+    position: relative;
     flex-direction: row-reverse;
     justify-content: end;
     align-items: flex-start;
@@ -909,29 +911,45 @@ border-left: none;
 
 
 .receiver {
+    position: relative;
     justify-content: flex-start;
     align-items: flex-start;
     max-width: 50%;
     margin-right: auto;
+   
 
 }
-
+.message-time-chat{
+    position: absolute;
+    right: 5%;
+    bottom: 0;
+    font-size: 0.8em;
+    color: var(--inactive-1);
+}
 .receiver-text {
     padding: 1em;
+    padding-bottom: 1.7em;
     background-color: var(--bg-color);
     border-top-right-radius: 1em;
     border-bottom-right-radius: 1em;
     border-bottom-left-radius: 1em;
-    box-shadow: var(--box-shadow);
+    font-size: 14.2px !important ;
+    line-height: 19px !important;
 }
 
 .sender-text {
     padding: 1em;
+    padding-bottom: 1.7em;
     background-color: var(--primary-color);
     border-bottom-right-radius: 1em;
     border-bottom-left-radius: 1em;
     border-top-left-radius: 1em;
     color: #FFFFFF;
+    font-size: 14.2px !important;
+    line-height: 19px !important;
+}
+.sender-text .message-time-chat{
+    color: #e6e5e5;
 }
 .sender-text.sender-img {
 
@@ -954,11 +972,11 @@ border-left: none;
     flex-direction: row;
 }
 .sender-document span{
-    font-size: 0.90em;
+    font-size: 0.885em;
     color: #FFF;
 }
 .receiver-document span{
-    font-size: 0.90em;
+    font-size: 0.885em;
     color: var(--text-color);
 }
 .chat-btn{
@@ -984,19 +1002,21 @@ display: none;
 /* common dropdown */
 .dropdown-holder {
     position: relative;
+
 }
 
 .dropdown {
     position: absolute;
     top: 100%;
     right: 0;
-    background-color: var(--dropdown);
+    background: var(--bg-1);
     border-radius: 10px;
     box-shadow:  rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
     z-index: 9999;
     font-weight: 500;
     white-space: nowrap;
     display: none;
+    z-index: 9999;
 }
 .dropdown p{
     padding: 0.5em 1.2em 0.5em 1.2em;
@@ -1006,6 +1026,40 @@ display: none;
     background-color: var(--tab-bg);
 }
 
+.three-dot{
+    position: absolute;
+    right: -10%;
+    top: 2%;
+}
+.message-options-elements{
+    padding: 0.5em 1em 0.5em 1em;
+
+}
+.message-options{
+    position: absolute;
+    right: -65%;
+    top: 0;
+    background: var(--bg-color);
+    border-radius: 0.5em;
+    display: none;
+    outline: none;
+
+}
+.sender-text .three-dot{
+    left: -10%;
+    top: 2%;
+}
+.sender-text .message-options{
+   right: 110%;
+    top: -2%;
+
+}
+.three-dot:focus + .message-options,
+.three-dot:hover + .message-options,
+.message-options:hover {
+    display:flex; 
+     
+}
 
 .dropdown-trigger:focus + .dropdown,
 .dropdown-trigger:hover + .dropdown,
@@ -1104,7 +1158,7 @@ display: none;
 /* Dropdown item styles */
 .dropdown-content a {
     padding: 12px 16px;
-    display: block;
+    
     color: var(--text-color);
     text-decoration: none;
     white-space: nowrap;

@@ -37,10 +37,10 @@
                         </svg>
                     </div>
                     <div class="dropdown ">
-                        <p>Setting</p>
-                        <p>Transfer</p>
-                        <p>Delete</p>
-                        <p>View More</p>
+                        <p>Clear chat</p>
+                        <p style="color: red;">Block</p>
+                        <p>Unblock</p>
+
 
                     </div>
                 </div>
@@ -49,240 +49,366 @@
         </div>
 
 
-        <div class="flex column gap hjo middle-contents" style="flex:1;">
-            <div class="flex  padding" style="background:var(--bg-1);"">
-                <div class=" flex s-gap column" style="width: 100%;">
-                <p>Last scan:</p>
-                <div class="flex between">
-                    <div class="flex middle s-gap">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                            <mask id="mask0_443_3862" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0"
-                                width="24" height="24">
-                                <rect width="24" height="24" fill="currentColor" />
-                            </mask>
-                            <g mask="url(#mask0_443_3862)">
+        <div class="flex column  hjo middle-contents" style="flex:1;">
+            <div class="flex column gap " style="background:var(--bg-1);">
+                <div class="text-center "
+                    style="background-color: var(--bg-color);width:fit-content;margin:auto;border-radius:0.5em; font-size:0.87em;padding:0.8em;margin-top:1em">
+                    March 20</div>
+                <p class="text-center "
+                    style="background-color: var(--bg-color);width:fit-content;margin:auto;border-radius:0.5em; font-size:0.87em;padding:0.8em">
+                    Call from codebell: 10:30am</p>
+            </div>
+            <div class="flex column gap padding  " style="background:var(--bg-1)">
+
+                <div class="receiver receiver-text receiver-img">
+                    <svg class="three-dot" tabindex="0" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                        fill="currentColor" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+                        <path
+                            d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z" />
+                    </svg>
+                    <div class="message-options">
+                        <div class="row message-options-elements flex gap">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-reply" viewBox="0 0 16 16">
                                 <path
-                                    d="M5 21.9998C4.45 21.9998 3.979 21.8041 3.587 21.4128C3.19567 21.0208 3 20.5498 3 19.9998V5.99976C3 5.44976 3.19567 4.97909 3.587 4.58776C3.979 4.19576 4.45 3.99976 5 3.99976H6V1.99976H8V3.99976H16V1.99976H18V3.99976H19C19.55 3.99976 20.021 4.19576 20.413 4.58776C20.8043 4.97909 21 5.44976 21 5.99976V19.9998C21 20.5498 20.8043 21.0208 20.413 21.4128C20.021 21.8041 19.55 21.9998 19 21.9998H5ZM5 19.9998H19V9.99976H5V19.9998ZM5 7.99976H19V5.99976H5V7.99976ZM12 13.9998C11.7167 13.9998 11.4793 13.9038 11.288 13.7118C11.096 13.5204 11 13.2831 11 12.9998C11 12.7164 11.096 12.4788 11.288 12.2868C11.4793 12.0954 11.7167 11.9998 12 11.9998C12.2833 11.9998 12.521 12.0954 12.713 12.2868C12.9043 12.4788 13 12.7164 13 12.9998C13 13.2831 12.9043 13.5204 12.713 13.7118C12.521 13.9038 12.2833 13.9998 12 13.9998ZM8 13.9998C7.71667 13.9998 7.479 13.9038 7.287 13.7118C7.09567 13.5204 7 13.2831 7 12.9998C7 12.7164 7.09567 12.4788 7.287 12.2868C7.479 12.0954 7.71667 11.9998 8 11.9998C8.28333 11.9998 8.521 12.0954 8.713 12.2868C8.90433 12.4788 9 12.7164 9 12.9998C9 13.2831 8.90433 13.5204 8.713 13.7118C8.521 13.9038 8.28333 13.9998 8 13.9998ZM16 13.9998C15.7167 13.9998 15.4793 13.9038 15.288 13.7118C15.096 13.5204 15 13.2831 15 12.9998C15 12.7164 15.096 12.4788 15.288 12.2868C15.4793 12.0954 15.7167 11.9998 16 11.9998C16.2833 11.9998 16.5207 12.0954 16.712 12.2868C16.904 12.4788 17 12.7164 17 12.9998C17 13.2831 16.904 13.5204 16.712 13.7118C16.5207 13.9038 16.2833 13.9998 16 13.9998ZM12 17.9998C11.7167 17.9998 11.4793 17.9038 11.288 17.7118C11.096 17.5204 11 17.2831 11 16.9998C11 16.7164 11.096 16.4791 11.288 16.2878C11.4793 16.0958 11.7167 15.9998 12 15.9998C12.2833 15.9998 12.521 16.0958 12.713 16.2878C12.9043 16.4791 13 16.7164 13 16.9998C13 17.2831 12.9043 17.5204 12.713 17.7118C12.521 17.9038 12.2833 17.9998 12 17.9998ZM8 17.9998C7.71667 17.9998 7.479 17.9038 7.287 17.7118C7.09567 17.5204 7 17.2831 7 16.9998C7 16.7164 7.09567 16.4791 7.287 16.2878C7.479 16.0958 7.71667 15.9998 8 15.9998C8.28333 15.9998 8.521 16.0958 8.713 16.2878C8.90433 16.4791 9 16.7164 9 16.9998C9 17.2831 8.90433 17.5204 8.713 17.7118C8.521 17.9038 8.28333 17.9998 8 17.9998ZM16 17.9998C15.7167 17.9998 15.4793 17.9038 15.288 17.7118C15.096 17.5204 15 17.2831 15 16.9998C15 16.7164 15.096 16.4791 15.288 16.2878C15.4793 16.0958 15.7167 15.9998 16 15.9998C16.2833 15.9998 16.5207 16.0958 16.712 16.2878C16.904 16.4791 17 16.7164 17 16.9998C17 17.2831 16.904 17.5204 16.712 17.7118C16.5207 17.9038 16.2833 17.9998 16 17.9998Z"
-                                    fill="currentColor" />
-                            </g>
-                        </svg>
-                        <h3>Mar-20-2023</h3>
+                                    d="M6.598 5.013a.144.144 0 0 1 .202.134V6.3a.5.5 0 0 0 .5.5c.667 0 2.013.005 3.3.822.984.624 1.99 1.76 2.595 3.876-1.02-.983-2.185-1.516-3.205-1.799a8.74 8.74 0 0 0-1.921-.306 7.404 7.404 0 0 0-.798.008h-.013l-.005.001h-.001L7.3 9.9l-.05-.498a.5.5 0 0 0-.45.498v1.153c0 .108-.11.176-.202.134L2.614 8.254a.503.503 0 0 0-.042-.028.147.147 0 0 1 0-.252.499.499 0 0 0 .042-.028l3.984-2.933zM7.8 10.386c.068 0 .143.003.223.006.434.02 1.034.086 1.7.271 1.326.368 2.896 1.202 3.94 3.08a.5.5 0 0 0 .933-.305c-.464-3.71-1.886-5.662-3.46-6.66-1.245-.79-2.527-.942-3.336-.971v-.66a1.144 1.144 0 0 0-1.767-.96l-3.994 2.94a1.147 1.147 0 0 0 0 1.946l3.994 2.94a1.144 1.144 0 0 0 1.767-.96v-.667z" />
+                            </svg>
+                            <span>Reply</span>
+                        </div>
                     </div>
-                    <div class="flex middle s-gap">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                            <mask id="mask0_443_3856" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0"
-                                width="24" height="24">
-                                <rect width="24" height="24" fill="currentColor" />
-                            </mask>
-                            <g mask="url(#mask0_443_3856)">
-                                <path
-                                    d="M15.3006 16.6998L16.7006 15.2998L13.0006 11.5998V6.99976H11.0006V12.3998L15.3006 16.6998ZM12.0006 21.9998C10.6173 21.9998 9.31728 21.7371 8.10061 21.2118C6.88394 20.6871 5.82561 19.9748 4.92561 19.0748C4.02561 18.1748 3.31328 17.1164 2.78861 15.8998C2.26328 14.6831 2.00061 13.3831 2.00061 11.9998C2.00061 10.6164 2.26328 9.31642 2.78861 8.09976C3.31328 6.88309 4.02561 5.82476 4.92561 4.92476C5.82561 4.02476 6.88394 3.31209 8.10061 2.78676C9.31728 2.26209 10.6173 1.99976 12.0006 1.99976C13.3839 1.99976 14.6839 2.26209 15.9006 2.78676C17.1173 3.31209 18.1756 4.02476 19.0756 4.92476C19.9756 5.82476 20.6879 6.88309 21.2126 8.09976C21.7379 9.31642 22.0006 10.6164 22.0006 11.9998C22.0006 13.3831 21.7379 14.6831 21.2126 15.8998C20.6879 17.1164 19.9756 18.1748 19.0756 19.0748C18.1756 19.9748 17.1173 20.6871 15.9006 21.2118C14.6839 21.7371 13.3839 21.9998 12.0006 21.9998ZM12.0006 19.9998C14.2173 19.9998 16.1049 19.2208 17.6636 17.6628C19.2216 16.1041 20.0006 14.2164 20.0006 11.9998C20.0006 9.78309 19.2216 7.89542 17.6636 6.33676C16.1049 4.77876 14.2173 3.99976 12.0006 3.99976C9.78394 3.99976 7.89661 4.77876 6.33861 6.33676C4.77994 7.89542 4.00061 9.78309 4.00061 11.9998C4.00061 14.2164 4.77994 16.1041 6.33861 17.6628C7.89661 19.2208 9.78394 19.9998 12.0006 19.9998Z"
-                                    fill="currentColor" />
-                            </g>
-                        </svg>
-                        <h3>10:40 AM</h3>
+                    <div class="flex column s-gap">
+                        <img src="/assets/img/playstore.png" alt="">
+                        <div class="chat-btn text-center">Download</div>
+                    </div>
+                    <div class="message-time-chat">
+                        4:50 pm
+                    </div>
+
+                </div>
+                <div class="sender sender-text">
+                    Hey there! I'm doing well, thanks for asking.
+                    <div class="message-time-chat">
+                        4:50 pm
                     </div>
                 </div>
-            </div>
-        </div>
-        <div class="flex column gap "  >
-            <div class="text-center "
-                style="background-color: var(--bg-1);width:fit-content;margin:auto;border-radius:0.5em; font-size:0.87em;padding:0.8em">
-                March 20</div>
-            <p class="text-center "
-                style="background-color: var(--bg-1);width:fit-content;margin:auto;border-radius:0.5em; font-size:0.87em;padding:0.8em">
-                Call from codebell: 10:30am</p>
-        </div>
-        <div class="flex column gap padding  " style="background:var(--bg-1)">
-            
-            <div class="receiver receiver-text receiver-img">
-                <div class="flex column s-gap">
+                <div class="receiver receiver-text receiver-document">
+                    <div class="flex column s-gap">
+                        <div class="flex middle gap">
+                            <div class="flex middle center"
+                                style="padding: 0.8em;background:var(--bg-1);border-radius:50%">
+                                <svg style="color: red;" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                    fill="currentColor" class="bi bi-telephone-inbound" viewBox="0 0 16 16">
+                                    <path
+                                        d="M15.854.146a.5.5 0 0 1 0 .708L11.707 5H14.5a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5v-4a.5.5 0 0 1 1 0v2.793L15.146.146a.5.5 0 0 1 .708 0m-12.2 1.182a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
+                                </svg>
+                            </div>
+                            <div class="flex column ">
+                                <p>Missed voice call</p>
+                                <span>Tap to call back</span></span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="message-time-chat">
+                        4:50 pm
+                    </div>
+                </div>
+                <div class="receiver receiver-text receiver-document">
+
+                    <div class="flex column s-gap">
+                        <div class="flex middle gap">
+                            <div class="flex middle center"
+                                style="padding: 0.8em;background:var(--bg-1);border-radius:50%">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                    class="bi bi-telephone-inbound" viewBox="0 0 16 16">
+                                    <path
+                                        d="M15.854.146a.5.5 0 0 1 0 .708L11.707 5H14.5a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5v-4a.5.5 0 0 1 1 0v2.793L15.146.146a.5.5 0 0 1 .708 0m-12.2 1.182a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
+                                </svg>
+                            </div>
+                            <div class="flex column ">
+                                <p>voice call</p>
+                                <span>5 mins</span></span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="message-time-chat">
+                        4:50 pm
+                    </div>
+                </div>
+                <div class="receiver receiver-text receiver-document">
+                    <div class="flex column s-gap">
+                        <div class="flex middle s-gap">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+                                class="bi bi-filetype-pdf" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M14 4.5V14a2 2 0 0 1-2 2h-1v-1h1a1 1 0 0 0 1-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5zM1.6 11.85H0v3.999h.791v-1.342h.803q.43 0 .732-.173.305-.175.463-.474a1.4 1.4 0 0 0 .161-.677q0-.375-.158-.677a1.2 1.2 0 0 0-.46-.477q-.3-.18-.732-.179m.545 1.333a.8.8 0 0 1-.085.38.57.57 0 0 1-.238.241.8.8 0 0 1-.375.082H.788V12.48h.66q.327 0 .512.181.185.183.185.522m1.217-1.333v3.999h1.46q.602 0 .998-.237a1.45 1.45 0 0 0 .595-.689q.196-.45.196-1.084 0-.63-.196-1.075a1.43 1.43 0 0 0-.589-.68q-.396-.234-1.005-.234zm.791.645h.563q.371 0 .609.152a.9.9 0 0 1 .354.454q.118.302.118.753a2.3 2.3 0 0 1-.068.592 1.1 1.1 0 0 1-.196.422.8.8 0 0 1-.334.252 1.3 1.3 0 0 1-.483.082h-.563zm3.743 1.763v1.591h-.79V11.85h2.548v.653H7.896v1.117h1.606v.638z" />
+                            </svg>
+                            <div class="flex column ">
+                                <p>Notice</p>
+                                <span>PDF . <span>16 MB</span></span>
+                            </div>
+                        </div>
+                        <p class="text-center chat-btn">Download</p>
+                    </div>
+                    <div class="message-time-chat">
+                        4:50 pm
+                    </div>
+                </div>
+                <div class="sender sender-text sender-img">
                     <img src="/assets/img/playstore.png" alt="">
-                    <div class="chat-btn text-center">Download</div>
-                </div>
-
-            </div>
-            <div class="sender sender-text">
-                Hey there! I'm doing well, thanks for asking.
-            </div>
-
-            <div class="receiver receiver-text receiver-document">
-                <div class="flex column s-gap">
-                    <div class="flex middle s-gap">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
-                            class="bi bi-filetype-pdf" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd"
-                                d="M14 4.5V14a2 2 0 0 1-2 2h-1v-1h1a1 1 0 0 0 1-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5zM1.6 11.85H0v3.999h.791v-1.342h.803q.43 0 .732-.173.305-.175.463-.474a1.4 1.4 0 0 0 .161-.677q0-.375-.158-.677a1.2 1.2 0 0 0-.46-.477q-.3-.18-.732-.179m.545 1.333a.8.8 0 0 1-.085.38.57.57 0 0 1-.238.241.8.8 0 0 1-.375.082H.788V12.48h.66q.327 0 .512.181.185.183.185.522m1.217-1.333v3.999h1.46q.602 0 .998-.237a1.45 1.45 0 0 0 .595-.689q.196-.45.196-1.084 0-.63-.196-1.075a1.43 1.43 0 0 0-.589-.68q-.396-.234-1.005-.234zm.791.645h.563q.371 0 .609.152a.9.9 0 0 1 .354.454q.118.302.118.753a2.3 2.3 0 0 1-.068.592 1.1 1.1 0 0 1-.196.422.8.8 0 0 1-.334.252 1.3 1.3 0 0 1-.483.082h-.563zm3.743 1.763v1.591h-.79V11.85h2.548v.653H7.896v1.117h1.606v.638z" />
-                        </svg>
-                        <div class="flex column ">
-                            <p>Notice</p>
-                            <span>PDF . <span>16 MB</span></span>
-                        </div>
+                    <div class="message-time-chat">
+                        4:50 pm
                     </div>
-                    <p class="text-center chat-btn">Download</p>
                 </div>
-            </div>
-            <div class="sender sender-text sender-img">
-                <img src="/assets/img/playstore.png" alt="">
-            </div>
-            <div class="sender sender-text">
-                It's sunny and warm, perfect day!
-            </div>
-
-            <div class="sender sender-text sender-document">
-                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
-                    class="bi bi-file-earmark-richtext" viewBox="0 0 16 16">
-                    <path
-                        d="M14 4.5V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h5.5zm-3 0A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4.5z" />
-                    <path
-                        d="M4.5 12.5A.5.5 0 0 1 5 12h3a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5m0-2A.5.5 0 0 1 5 10h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5m1.639-3.708 1.33.886 1.854-1.855a.25.25 0 0 1 .289-.047l1.888.974V8.5a.5.5 0 0 1-.5.5H5a.5.5 0 0 1-.5-.5V8s1.54-1.274 1.639-1.208M6.25 6a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5" />
-                </svg>
-                <div class="flex column ">
-                    <p>Image Name</p>
-                    <span>WEBP . <span>26 MB</span></span>
-                </div>
-
-            </div>
-            <div class="receiver receiver-text">
-                Did you watch any good movies lately?
-            </div>
-
-            <div class="sender sender-text sender-document">
-                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
-                    class="bi bi-filetype-pdf" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd"
-                        d="M14 4.5V14a2 2 0 0 1-2 2h-1v-1h1a1 1 0 0 0 1-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5zM1.6 11.85H0v3.999h.791v-1.342h.803q.43 0 .732-.173.305-.175.463-.474a1.4 1.4 0 0 0 .161-.677q0-.375-.158-.677a1.2 1.2 0 0 0-.46-.477q-.3-.18-.732-.179m.545 1.333a.8.8 0 0 1-.085.38.57.57 0 0 1-.238.241.8.8 0 0 1-.375.082H.788V12.48h.66q.327 0 .512.181.185.183.185.522m1.217-1.333v3.999h1.46q.602 0 .998-.237a1.45 1.45 0 0 0 .595-.689q.196-.45.196-1.084 0-.63-.196-1.075a1.43 1.43 0 0 0-.589-.68q-.396-.234-1.005-.234zm.791.645h.563q.371 0 .609.152a.9.9 0 0 1 .354.454q.118.302.118.753a2.3 2.3 0 0 1-.068.592 1.1 1.1 0 0 1-.196.422.8.8 0 0 1-.334.252 1.3 1.3 0 0 1-.483.082h-.563zm3.743 1.763v1.591h-.79V11.85h2.548v.653H7.896v1.117h1.606v.638z" />
-                </svg>
-                <div class="flex column ">
-                    <p>Notice</p>
-                    <span>PDF . <span>125 KB</span></span>
-                </div>
-            </div>
-
-
-            <div class="sender sender-text">
-                Not sure yet, maybe just relaxing and catching up on some reading.
-            </div>
-
-            <div class="receiver receiver-text receiver-document">
-                <div class="flex column s-gap">
-                    <div class="flex middle s-gap">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
-                            class="bi bi-file-earmark-zip" viewBox="0 0 16 16">
-                            <path
-                                d="M5 7.5a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v.938l.4 1.599a1 1 0 0 1-.416 1.074l-.93.62a1 1 0 0 1-1.11 0l-.929-.62a1 1 0 0 1-.415-1.074L5 8.438zm2 0H6v.938a1 1 0 0 1-.03.243l-.4 1.598.93.62.929-.62-.4-1.598A1 1 0 0 1 7 8.438z" />
-                            <path
-                                d="M14 4.5V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h5.5zm-3 0A1.5 1.5 0 0 1 9.5 3V1h-2v1h-1v1h1v1h-1v1h1v1H6V5H5V4h1V3H5V2h1V1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4.5z" />
-                        </svg>
-                        <div class="flex column ">
-                            <p>File</p>
-                            <span>ZIP . <span>25 MB</span></span>
-                        </div>
+                <div class="sender sender-text">
+                    It's sunny and warm, perfect day!
+                    <div class="message-time-chat">
+                        4:50 pm
                     </div>
-                    <p class="text-center chat-btn">Download</p>
                 </div>
-            </div>
-            <div class="sender sender-text">
-                Yes, the food was fantastic! A must-try.
+
+                <div class="sender sender-text sender-document">
+                    <svg class="three-dot" tabindex="0" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                    fill="currentColor" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+                    <path
+                        d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z" />
+                </svg>
+                <div class="message-options">
+                    <div class="message-options-elements flex gap">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-reply" viewBox="0 0 16 16">
+                            <path
+                                d="M6.598 5.013a.144.144 0 0 1 .202.134V6.3a.5.5 0 0 0 .5.5c.667 0 2.013.005 3.3.822.984.624 1.99 1.76 2.595 3.876-1.02-.983-2.185-1.516-3.205-1.799a8.74 8.74 0 0 0-1.921-.306 7.404 7.404 0 0 0-.798.008h-.013l-.005.001h-.001L7.3 9.9l-.05-.498a.5.5 0 0 0-.45.498v1.153c0 .108-.11.176-.202.134L2.614 8.254a.503.503 0 0 0-.042-.028.147.147 0 0 1 0-.252.499.499 0 0 0 .042-.028l3.984-2.933zM7.8 10.386c.068 0 .143.003.223.006.434.02 1.034.086 1.7.271 1.326.368 2.896 1.202 3.94 3.08a.5.5 0 0 0 .933-.305c-.464-3.71-1.886-5.662-3.46-6.66-1.245-.79-2.527-.942-3.336-.971v-.66a1.144 1.144 0 0 0-1.767-.96l-3.994 2.94a1.147 1.147 0 0 0 0 1.946l3.994 2.94a1.144 1.144 0 0 0 1.767-.96v-.667z" />
+                        </svg>
+                        <span>Reply</span>
+                    </div>
+                </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+                        class="bi bi-file-earmark-richtext" viewBox="0 0 16 16">
+                        <path
+                            d="M14 4.5V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h5.5zm-3 0A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4.5z" />
+                        <path
+                            d="M4.5 12.5A.5.5 0 0 1 5 12h3a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5m0-2A.5.5 0 0 1 5 10h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5m1.639-3.708 1.33.886 1.854-1.855a.25.25 0 0 1 .289-.047l1.888.974V8.5a.5.5 0 0 1-.5.5H5a.5.5 0 0 1-.5-.5V8s1.54-1.274 1.639-1.208M6.25 6a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5" />
+                    </svg>
+                    <div class="flex column ">
+                        <p>Image Name</p>
+                        <span>WEBP . <span>26 MB</span></span>
+                    </div>
+                    <div class="message-time-chat">
+                        4:50 pm
+                    </div>
+                </div>
+                <div class="receiver receiver-text">
+                    Did you watch any good movies lately?
+                    <div class="message-time-chat">
+                        4:50 pm
+                    </div>
+                </div>
+
+                <div class="sender sender-text sender-document">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+                        class="bi bi-filetype-pdf" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M14 4.5V14a2 2 0 0 1-2 2h-1v-1h1a1 1 0 0 0 1-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5zM1.6 11.85H0v3.999h.791v-1.342h.803q.43 0 .732-.173.305-.175.463-.474a1.4 1.4 0 0 0 .161-.677q0-.375-.158-.677a1.2 1.2 0 0 0-.46-.477q-.3-.18-.732-.179m.545 1.333a.8.8 0 0 1-.085.38.57.57 0 0 1-.238.241.8.8 0 0 1-.375.082H.788V12.48h.66q.327 0 .512.181.185.183.185.522m1.217-1.333v3.999h1.46q.602 0 .998-.237a1.45 1.45 0 0 0 .595-.689q.196-.45.196-1.084 0-.63-.196-1.075a1.43 1.43 0 0 0-.589-.68q-.396-.234-1.005-.234zm.791.645h.563q.371 0 .609.152a.9.9 0 0 1 .354.454q.118.302.118.753a2.3 2.3 0 0 1-.068.592 1.1 1.1 0 0 1-.196.422.8.8 0 0 1-.334.252 1.3 1.3 0 0 1-.483.082h-.563zm3.743 1.763v1.591h-.79V11.85h2.548v.653H7.896v1.117h1.606v.638z" />
+                    </svg>
+                    <div class="flex column ">
+                        <p>Notice</p>
+                        <span>PDF . <span>125 KB</span></span>
+                    </div>
+                    <div class="message-time-chat">
+                        4:50 pm
+                    </div>
+                </div>
+                <div class="sender sender-text sender-document">
+                    <div class="flex middle center"
+                        style="padding: 0.8em;background:var(--primary-off);border-radius:50%">
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                            class="bi bi-telephone-outbound" viewBox="0 0 16 16">
+                            <path
+                                d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877zM11 .5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V1.707l-4.146 4.147a.5.5 0 0 1-.708-.708L14.293 1H11.5a.5.5 0 0 1-.5-.5" />
+                        </svg>
+                    </div>
+                    <div class="flex column ">
+                        <p>voice call</p>
+                        <span>14 mins</span></span>
+                    </div>
+                    <div class="message-time-chat">
+                        4:50 pm
+                    </div>
+                </div>
+                <div class="sender sender-text sender-document">
+                    <div class="flex middle center"
+                        style="padding: 0.8em;background:var(--primary-off);border-radius:50%">
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                            class="bi bi-telephone-outbound" viewBox="0 0 16 16">
+                            <path
+                                d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877zM11 .5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V1.707l-4.146 4.147a.5.5 0 0 1-.708-.708L14.293 1H11.5a.5.5 0 0 1-.5-.5" />
+                        </svg>
+                    </div>
+                    <div class="flex column ">
+                        <p>voice call</p>
+                        <span>No answer</span></span>
+                    </div>
+                    <div class="message-time-chat">
+                        4:50 pm
+                    </div>
+                </div>
+
+                <div class="sender sender-text">
+                    Not sure yet, maybe just relaxing and catching up on some reading.
+
+                    <div class="message-time-chat">
+                        4:50 pm
+                    </div>
+                </div>
+
+                <div class="receiver receiver-text receiver-document">
+                    <div class="flex column s-gap">
+                        <div class="flex middle s-gap">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+                                class="bi bi-file-earmark-zip" viewBox="0 0 16 16">
+                                <path
+                                    d="M5 7.5a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v.938l.4 1.599a1 1 0 0 1-.416 1.074l-.93.62a1 1 0 0 1-1.11 0l-.929-.62a1 1 0 0 1-.415-1.074L5 8.438zm2 0H6v.938a1 1 0 0 1-.03.243l-.4 1.598.93.62.929-.62-.4-1.598A1 1 0 0 1 7 8.438z" />
+                                <path
+                                    d="M14 4.5V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h5.5zm-3 0A1.5 1.5 0 0 1 9.5 3V1h-2v1h-1v1h1v1h-1v1h1v1H6V5H5V4h1V3H5V2h1V1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4.5z" />
+                            </svg>
+                            <div class="flex column ">
+                                <p>File</p>
+                                <span>ZIP . <span>25 MB</span></span>
+                            </div>
+                        </div>
+                        <p class="text-center chat-btn">Download</p>
+                    </div>
+                    <div class="message-time-chat">
+                        4:50 pm
+                    </div>
+                </div>
+                <div class="sender sender-text">
+                    Yes, the food was fantastic! A must-try.
+                    <div class="message-time-chat">
+                        4:50 pm
+                    </div>
+                </div>
+
+
+
             </div>
 
 
 
         </div>
+        <div class="flex column middle gap">
+
+            <div class="flex middle c between  s-gap" style="width: 90%;padding-top:0.5em;">
+                <div class="flex middle chat-send" style="width: 100%;">
 
 
+                    <div class="attachment-dropdown emoji-dropdown">
+                        <svg class="hover-2 short-padding emoji flex middle center" xmlns="http://www.w3.org/2000/svg"
+                            width="25" height="25" fill="currentColor" class="bi bi-emoji-smile" viewBox="0 0 16 16">
+                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                            <path
+                                d="M4.285 9.567a.5.5 0 0 1 .683.183A3.5 3.5 0 0 0 8 11.5a3.5 3.5 0 0 0 3.032-1.75.5.5 0 1 1 .866.5A4.5 4.5 0 0 1 8 12.5a4.5 4.5 0 0 1-3.898-2.25.5.5 0 0 1 .183-.683M7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5m4 0c0 .828-.448 1.5-1 1.5s-1-.672-1-1.5S9.448 5 10 5s1 .672 1 1.5" />
+                        </svg>
 
-    </div>
-    <div class="flex column middle gap">
+                        <div class="dropdown-content emoji-content " id="emojiOptions">
+                            <span class="emoji-option">😊</span>
+                            <span class="emoji-option">😂</span>
+                            <span class="emoji-option">😍</span>
 
-        <div class="flex middle c between  s-gap" style="width: 90%;padding-top:0.5em;">
-            <div class="flex middle chat-send" style="width: 100%;">
 
+                        </div>
+                    </div>
+                    <input type="message" placeholder="Type your message" style="width: 80%;">
 
-                <div class="attachment-dropdown emoji-dropdown">
-                    <svg class="hover-2 short-padding emoji flex middle center" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
-                        fill="currentColor" class="bi bi-emoji-smile" viewBox="0 0 16 16">
-                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
-                        <path
-                            d="M4.285 9.567a.5.5 0 0 1 .683.183A3.5 3.5 0 0 0 8 11.5a3.5 3.5 0 0 0 3.032-1.75.5.5 0 1 1 .866.5A4.5 4.5 0 0 1 8 12.5a4.5 4.5 0 0 1-3.898-2.25.5.5 0 0 1 .183-.683M7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5m4 0c0 .828-.448 1.5-1 1.5s-1-.672-1-1.5S9.448 5 10 5s1 .672 1 1.5" />
-                    </svg>
+                    <div class="attachment-dropdown">
+                        <svg class="hover-2 short-padding attach flex middle center" xmlns="http://www.w3.org/2000/svg"
+                            width="25" height="25" fill="currentColor" class="bi bi-paperclip" viewBox="0 0 16 16">
+                            <path
+                                d="M4.5 3a2.5 2.5 0 0 1 5 0v9a1.5 1.5 0 0 1-3 0V5a.5.5 0 0 1 1 0v7a.5.5 0 0 0 1 0V3a1.5 1.5 0 1 0-3 0v9a2.5 2.5 0 0 0 5 0V5a.5.5 0 0 1 1 0v7a3.5 3.5 0 1 1-7 0z" />
+                        </svg>
 
-                    <div class="dropdown-content emoji-content "  id="emojiOptions">
-                        <span class="emoji-option">😊</span>
-                        <span class="emoji-option">😂</span>
-                        <span class="emoji-option">😍</span>
-
-                        
+                        <div class="dropdown-content">
+                            <a href="#" class="flex middle s-gap">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                    class="bi bi-file-earmark-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M4 0h5.293A1 1 0 0 1 10 .293L13.707 4a1 1 0 0 1 .293.707V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2m5.5 1.5v2a1 1 0 0 0 1 1h2z" />
+                                </svg>
+                                Document</a>
+                            <a href="#" class="flex middle s-gap">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                    class="bi bi-image-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M.002 3a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-12a2 2 0 0 1-2-2zm1 9v1a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V9.5l-3.777-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062zm5-6.5a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0" />
+                                </svg>
+                                Gallery</a>
+                            <a href="#" class="flex middle s-gap">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                    class="bi bi-mic-fill" viewBox="0 0 16 16">
+                                    <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0z" />
+                                    <path
+                                        d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5" />
+                                </svg>
+                                Voice message</a>
+                        </div>
                     </div>
                 </div>
-                <input type="message" placeholder="Type your message" style="width: 80%;">
-
-                <div class="attachment-dropdown">
-                    <svg class="hover-2 short-padding attach flex middle center" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
-                        fill="currentColor" class="bi bi-paperclip" viewBox="0 0 16 16">
-                        <path
-                            d="M4.5 3a2.5 2.5 0 0 1 5 0v9a1.5 1.5 0 0 1-3 0V5a.5.5 0 0 1 1 0v7a.5.5 0 0 0 1 0V3a1.5 1.5 0 1 0-3 0v9a2.5 2.5 0 0 0 5 0V5a.5.5 0 0 1 1 0v7a3.5 3.5 0 1 1-7 0z" />
-                    </svg>
-
-                    <div class="dropdown-content">
-                        <a href="#">Attach Document</a>
-                        <a href="#">Attach File</a>
-                        <a href="#">Attach Image</a>
-                    </div>
-                </div>
-            </div>
-            <div class="flex mic-send" style="padding: 0;">
-                <!-- <svg class="mic hover short-padding" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                <div class="flex mic-send" style="padding: 0;">
+                    <!-- <svg class="mic hover short-padding" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
                     viewBox="0 0 24 24" fill="none">
                     <path fill-rule="evenodd" clip-rule="evenodd"
                         d="M15 9.5C15 11.16 13.66 12.5 12 12.5C10.34 12.5 9 11.16 9 9.5V3.5C9 1.84 10.34 0.5 12 0.5C13.66 0.5 15 1.84 15 3.5V9.5ZM9 21.5H7V23.5H9V21.5ZM11 3.5C11 2.95 11.45 2.5 12 2.5C12.55 2.5 13 2.95 13 3.5V9.5C13 10.06 12.56 10.5 12 10.5C11.45 10.5 11 10.05 11 9.5V3.5ZM13 21.5H11V23.5H13V21.5ZM15 21.5H17V23.5H15V21.5ZM17.3 9.5H19C19 12.91 16.28 15.73 13 16.22V19.5H11V16.22C7.72 15.73 5 12.91 5 9.5H6.7C6.7 12.5 9.24 14.6 12 14.6C14.76 14.6 17.3 12.5 17.3 9.5Z"
                         fill="currentColor" />
                 </svg> -->
-                <svg class=" hover short-padding" data-1qi="true" width="25" height="25" aria-hidden="true"
-                    viewBox="0 0 20 20">
-                    <path fill="currentColor"
-                        d="M1.5 2.25a.755.755 0 0 1 1-.71l15.596 7.807a.73.73 0 0 1 0 1.306L2.5 18.46l-.076.018a.749.749 0 0 1-.924-.728v-4.54c0-1.21.97-2.229 2.21-2.25l6.54-.17c.27-.01.75-.24.75-.79s-.5-.79-.75-.79l-6.54-.17A2.253 2.253 0 0 1 1.5 6.789v-4.54Z">
-                    </path>
-                </svg>
+                    <svg class=" hover short-padding" data-1qi="true" width="25" height="25" aria-hidden="true"
+                        viewBox="0 0 20 20">
+                        <path fill="currentColor"
+                            d="M1.5 2.25a.755.755 0 0 1 1-.71l15.596 7.807a.73.73 0 0 1 0 1.306L2.5 18.46l-.076.018a.749.749 0 0 1-.924-.728v-4.54c0-1.21.97-2.229 2.21-2.25l6.54-.17c.27-.01.75-.24.75-.79s-.5-.79-.75-.79l-6.54-.17A2.253 2.253 0 0 1 1.5 6.789v-4.54Z">
+                        </path>
+                    </svg>
+                </div>
             </div>
         </div>
-    </div>
 
 
 
     </div>
-<script>
-// Unicode characters for a variety of emojis
-const emojiCharacters = ['😊', '😂', '😍', '👍', '❤️', '😎', '🙌', '🎉', '🤔', '🔥', '🌈', '🍕', '🎸', '🚀', '🌟', '🌻', '🍦', '🏆', '🚲', '🍓', '🌺', '📚', '🎈', '🎁', '🍀', '🌍', '🎨', '🍔', '🎤', '⚽', '🎮', '🎧', '🍭', '🏝️', '🚗', '🛸', '🍩', '🚀', '🍟', '🎡', '🏰', '🎭', '🚁', '🌠', '🚢', '🚂', '🚁', '🎠', '🎤'];
+    <script>
+        // Unicode characters for a variety of emojis
+        const emojiCharacters = ['😊', '😂', '😍', '👍', '❤️', '😎', '🙌', '🎉', '🤔', '🔥', '🌈', '🍕', '🎸', '🚀', '🌟', '🌻', '🍦', '🏆', '🚲', '🍓', '🌺', '📚', '🎈', '🎁', '🍀', '🌍', '🎨', '🍔', '🎤', '⚽', '🎮', '🎧', '🍭', '🏝️', '🚗', '🛸', '🍩', '🚀', '🍟', '🎡', '🏰', '🎭', '🚁', '🌠', '🚢', '🚂', '🚁', '🎠', '🎤'];
 
-// Get the emoji dropdown content element
-const emojiDropdownContent = document.getElementById('emojiOptions');
+        // Get the emoji dropdown content element
+        const emojiDropdownContent = document.getElementById('emojiOptions');
 
-// Populate the emoji dropdown with options
-emojiCharacters.forEach(emoji => {
-    const emojiOption = document.createElement('span');
-    emojiOption.classList.add('emoji-option');
-    emojiOption.textContent = emoji;
-    emojiDropdownContent.appendChild(emojiOption);
-});
+        // Populate the emoji dropdown with options
+        emojiCharacters.forEach(emoji => {
+            const emojiOption = document.createElement('span');
+            emojiOption.classList.add('emoji-option');
+            emojiOption.textContent = emoji;
+            emojiDropdownContent.appendChild(emojiOption);
+        });
 
-// Show emoji dropdown content when clicked on the emoji icon
-document.querySelector('.emoji-dropdown').addEventListener('mouseover', function () {
-    emojiDropdownContent.style.display = 'block';
-});
+        // Show emoji dropdown content when clicked on the emoji icon
+        document.querySelector('.emoji-dropdown').addEventListener('mouseover', function () {
+            emojiDropdownContent.style.display = 'block';
+        });
 
-document.querySelector('.emoji-dropdown').addEventListener('mouseout', function () {
-    emojiDropdownContent.style.display = 'none';
-});
+        document.querySelector('.emoji-dropdown').addEventListener('mouseout', function () {
+            emojiDropdownContent.style.display = 'none';
+        });
 
-// Handle emoji option click
-emojiDropdownContent.addEventListener('click', function (event) {
-    if (event.target.classList.contains('emoji-option')) {
-        const selectedEmoji = event.target.textContent;
-        document.querySelector('input[type="message"]').value += selectedEmoji;
-    }
-});
-</script>
+        // Handle emoji option click
+        emojiDropdownContent.addEventListener('click', function (event) {
+            if (event.target.classList.contains('emoji-option')) {
+                const selectedEmoji = event.target.textContent;
+                document.querySelector('input[type="message"]').value += selectedEmoji;
+            }
+        });
+    </script>
 
 
 
