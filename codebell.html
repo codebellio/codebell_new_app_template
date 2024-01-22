@@ -13,37 +13,38 @@
 </head>
 
 <body>
-    <div class="container flex column center" style="padding: 0;">
-        <div class="flex middle between top-content padding">
-            <a href="codebells.html" style="color: var(--text-color);"><svg xmlns="http://www.w3.org/2000/svg"
-                    width="16" height="16" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd"
-                        d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
-                </svg></a>
-                <h2 style="font-size: 1.125rem;
-                font-style: normal;
-                font-weight: 400;
-                line-height: 1.125rem; ">Codebell Car</h2>
-                <div class="dropdown-holder">
-                    <div class="dropdown-trigger">
-                        <svg  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                            fill="none">
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M12 8C13.1 8 14 7.1 14 6C14 4.9 13.1 4 12 4C10.9 4 10 4.9 10 6C10 7.1 10.9 8 12 8ZM12 10C10.9 10 10 10.9 10 12C10 13.1 10.9 14 12 14C13.1 14 14 13.1 14 12C14 10.9 13.1 10 12 10ZM10 18C10 16.9 10.9 16 12 16C13.1 16 14 16.9 14 18C14 19.1 13.1 20 12 20C10.9 20 10 19.1 10 18Z"
-                                fill="currentColor" />
-    
-                        </svg>
-                    </div>
-                    <div class="dropdown ">
-                        <p>Transfer</p>
-                        <p>Delete</p>
-                        <p>View More</p>
-                    </div>
+    <div class="flex middle between header">
+        <a href="codebells.html" style="color: var(--text-color);"><svg xmlns="http://www.w3.org/2000/svg"
+                width="16" height="16" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
+            </svg></a>
+            <h2 style="font-size: 1.125rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 1.125rem; ">Codebell Car</h2>
+            <div class="dropdown-holder">
+                <div class="dropdown-trigger">
+                    <svg  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M12 8C13.1 8 14 7.1 14 6C14 4.9 13.1 4 12 4C10.9 4 10 4.9 10 6C10 7.1 10.9 8 12 8ZM12 10C10.9 10 10 10.9 10 12C10 13.1 10.9 14 12 14C13.1 14 14 13.1 14 12C14 10.9 13.1 10 12 10ZM10 18C10 16.9 10.9 16 12 16C13.1 16 14 16.9 14 18C14 19.1 13.1 20 12 20C10.9 20 10 19.1 10 18Z"
+                            fill="currentColor" />
+
+                    </svg>
                 </div>
-        </div>
+                <div class="dropdown ">
+                    <p>Transfer</p>
+                    <p>Delete</p>
+                    <p>View More</p>
+                </div>
+            </div>
+    </div>
 
+    <div class="container flex column center" >
+        
 
-        <div class="flex column gap hjo middle-contents" style="flex:1">
+        <div class="flex column gap hjo middle-contents">
             <!-- 4 tabs view,setting,preview,visits -->
             <div class="flex center  padding" style="padding-top: 0;padding-bottom:0;">
                 <div class="flex middle center setting-top-nav" style="background:var(--bg-1);border-radius: 0.5em;">
@@ -249,8 +250,6 @@
                         <h3>Radius</h3>
                         <p id="sliderValue" class="slider-value">10m</p>
                         <input type="range" min="10" max="100" value="10" class="slider-scale" id="radiusSlider">
-<!-- 
-                        <p id="sliderValue">10m</p> -->
                     </div>
                     <div class="flex gap-1 center">
                         <div class="text-center button p-1"  id="confirmBtn" >cancel</div>
