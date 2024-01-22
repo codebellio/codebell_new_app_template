@@ -204,9 +204,9 @@
                     </svg>
                 </div>
                 <div class="modal  "  id="bottomModal">
-                    <div class="model-content ">
+                    <div class="model-content padding">
                         <div class="flex column gap">
-                        <div class="flex middle   message-search" style="width: 100%;">
+                        <div class="flex middle   message-search " style="border:1px solid var(--border-color)">
                             <svg style="margin-right: 0.5em;" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                 viewBox="0 0 16 16" fill="none">
                                 <path
@@ -217,10 +217,13 @@
                             font-style: normal;
                             font-weight: 400;">
                         </div>
-                        <div class="flex middle s-gap padding"
+                        <div class="flex center middle s-gap padding"
                             style="border:1px solid var(--border-color);border-radius:0.5em">
                             <img src="/assets/img/user.png" alt="" style="margin: 0;max-width:30%">
-                            <h3>Alex - 556646877</h3>
+                           <div class="flex column">
+                            <h3>Alex</h3>
+                            <p>556646877</p>
+                           </div>
                         </div>
 
                         <div class="flex gap  center middle">
@@ -308,10 +311,7 @@
             itemTab.forEach((tab) => tab.classList.remove('active-tab'));
             this.classList.add('active-tab');
         }
-
         itemTab.forEach((tab) => tab.addEventListener('click', activeTab));
-
-
         // pop up when click geofencing
         const toggleSwitch = document.getElementById('toggleSwitch');
         const popupContainer = document.getElementById('popupContainer');
@@ -326,7 +326,6 @@
                 popupContainer.style.display = 'none';
             }
         });
-
         document.addEventListener('DOMContentLoaded', function () {
             const slider = document.getElementById('radiusSlider');
             const sliderValueDisplay = document.getElementById('sliderValue');
@@ -341,8 +340,6 @@
                 popupContainer.style.display = 'none';
             });
         });
-
-
     </script>
 
     <script>
@@ -350,6 +347,7 @@
             const modalTrigger = document.querySelector('.modal-trigger');
             const modal = document.getElementById('bottomModal');
             const closeBtn = document.getElementById('closeBtn');
+            
     
             function closeModal() {
                 
