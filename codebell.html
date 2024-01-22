@@ -96,13 +96,23 @@
                     <span class="slider round"></span>
                 </label>
             </div>
-            <div class="flex middle between padding  bg-2">
-                <h3>DND <span style="color: var(--inactive);">(No Calls)</span></h3>
-                <label class="switch">
-                    <input type="checkbox" checked>
-                    <span class="slider round"></span>
-                </label>
+            <div class="flex middle between bg-2 padding" style="padding-left: 1.5em; padding-right:1.5em">
+                <h3>No of Shifts</h3>
+                <div class="flex middle between gap input" >
+                    <input type="number" placeholder="0" min="1" max="12" value="1" style="text-align: right;">
+                </div>
             </div>
+            <div class="flex between middle padding bg-2" >
+                <h3>Shift 1</h3>
+               
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+                  </svg>
+               
+            </div>
+          
+           
 
 
             <div class="flex column gap middle padding bg-2">
@@ -141,6 +151,13 @@
                 </div>
 
             </div>
+            <div class="flex middle between padding  bg-2">
+                <h3>DND <span style="color: var(--inactive);">(No Calls)</span></h3>
+                <label class="switch">
+                    <input type="checkbox" checked>
+                    <span class="slider round"></span>
+                </label>
+            </div>
             <div class="flex column padding s-gap bg-2">
                 <h3>Default call to:</h3>
                 <div class="flex middle between ">
@@ -164,7 +181,7 @@
                         <!-- <img src="/assets/img/user.png" alt="" style="margin: 0; max-width:20%""> -->
                         <h3>Not Set</h3>
                     </div>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                    <svg class="modal-trigger" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
                         class="bi bi-pencil" viewBox="0 0 16 16">
                         <path
                             d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325" />
@@ -186,8 +203,9 @@
                             d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325" />
                     </svg>
                 </div>
-                <div class="popup-content pop-up-setting" style="max-width: 90%;">
-                    <div class="flex column gap middle">
+                <div class="modal  "  id="bottomModal">
+                    <div class="model-content ">
+                        <div class="flex column gap">
                         <div class="flex middle   message-search" style="width: 100%;">
                             <svg style="margin-right: 0.5em;" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                 viewBox="0 0 16 16" fill="none">
@@ -215,15 +233,16 @@
                             <div class="button flex center middle text-center s-gap middle outline-button p-1"
                                 style="background-color: transparent; padding: 1em 2.5em;"">
                
-                    <p style=" color: var(--primary-color);font-weight: 700; line-height: 1rem;">Cancel</p>
+                    <p style=" color: var(--primary-color);font-weight: 700; line-height: 1rem;" id="closeBtn">Cancel</p>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
 
 
             </div>
-            <script>
+            <!-- <script>
                 document.addEventListener('DOMContentLoaded', function () {
                     // Get references to the trigger and pop-up content elements
                     const popUpTrigger = document.querySelector('.pop-up-trigger');
@@ -247,7 +266,7 @@
                         }
                     });
                 });
-            </script>
+            </script> -->
 
 
 
@@ -325,6 +344,27 @@
 
 
     </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const modalTrigger = document.querySelector('.modal-trigger');
+            const modal = document.getElementById('bottomModal');
+            const closeBtn = document.getElementById('closeBtn');
+    
+            function closeModal() {
+                
+                modal.style.bottom = '-100%'; // Hide the modal by setting bottom to -100%
+            }
+    
+            modalTrigger.addEventListener('click', function (e) {
+                e.stopPropagation(); // Prevent the click event from reaching the modal background
+                modal.style.bottom = '0'; // Show the modal by setting bottom to 0
+            });
+    
+            closeBtn.addEventListener('click', closeModal);
+    
+            modal.addEventListener('click', closeModal);
+        });</script>
     <script src="main.js"></script>
     <script src="darkmode.js"></script>
 </body>
