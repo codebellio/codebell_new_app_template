@@ -84,7 +84,15 @@ body {
     z-index: 100;
     
 }
-
+.sub{
+    font-size: 0.875em;
+}
+.card{
+    
+}
+.dim{
+    color: var(--sub-text-color);
+}
 .logo svg {
     color: var(--primary-color);
 }
@@ -163,7 +171,11 @@ button,
 
 
 }
-
+button.mini,.button.mini{
+padding: 0.5em 1em;
+border-radius: 0.5em;
+font-weight: 400;
+}
 .outline-button {
     border-radius: 2em;
     border: 1px solid var(--primary-color);
@@ -589,9 +601,6 @@ input:checked+.slider:before {
 
 }
 
-.question-box:hover {
-    color: var(--primary-color);
-}
 
 @media screen and (max-width:420px) {
     .faq-box {
@@ -617,7 +626,7 @@ input:checked+.slider:before {
     transition: 0.5s;
 }
 .ans p {
-    border-top: 1px solid var(--primary-color);
+    border-top: 1px solid var(--inactive-1);
     padding: 1.5em 1.5em 1.5em;
     width: calc(100% - 3em);
     color: var(--sub-text-color);
