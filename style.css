@@ -1068,12 +1068,12 @@ input:checked+.slider:before {
 }
 .sender-text .three-dot {
     left: -10%;
-    top: 2%;
+    top:0;
 }
 
 .sender-text .message-options {
-    right: 110%;
-    top: -2%;
+    right: 115%;
+    top: -5%;
 }
 .three-dot:focus+.message-options,
 .three-dot:hover+.message-options,
