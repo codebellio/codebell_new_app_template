@@ -87,9 +87,7 @@ body {
 .sub{
     font-size: 0.875em;
 }
-.card{
 
-}
 .dim{
     color: var(--sub-text-color);
 }
@@ -141,8 +139,6 @@ h3 {
 .list-content {
     padding: 1em;
     width: calc(100% - 2em);
-
-
 }
 
 .list-content:hover {
@@ -156,7 +152,7 @@ button,
     padding: 0.5em;
     background-color: var(--primary-color);
     color: #fff;
-    padding: 1em 2em;
+    padding: 0.5em 2em;
     border-radius: 2em;
     text-align: center;
     font-size: 1rem;
