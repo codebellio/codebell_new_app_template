@@ -787,9 +787,6 @@ input:checked+.slider:before {
 }
 
 
-.modal-trigger:hover {
-    text-decoration: underline;
-}
 
 /* tab item */
 .setting-top-nav {
