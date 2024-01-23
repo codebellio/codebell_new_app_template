@@ -1038,12 +1038,13 @@ input:checked+.slider:before {
     z-index: 9999;
 }
 
-.dropdown p {
+.dropdown p,.dropdown a  {
     padding: 0.5em 1.2em 0.5em 1.2em;
     border-radius: 0.5em;
+    display: block;
 }
 
-.dropdown p:hover {
+.dropdown p:hover,.dropdown a:hover {
     background-color: var(--tab-bg);
 }
 
@@ -1176,7 +1177,6 @@ input:checked+.slider:before {
 /* Dropdown item styles */
 .dropdown-content a {
     padding: 12px 16px;
-
     color: var(--text-color);
     text-decoration: none;
     white-space: nowrap;
