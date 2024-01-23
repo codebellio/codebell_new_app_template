@@ -1190,3 +1190,7 @@ input:checked+.slider:before {
 .attachment-dropdown:hover .dropdown-content {
     display: block;
 }
+.danger{
+    background: rgb(202, 4, 4);
+    color: #ffffff;
+}
