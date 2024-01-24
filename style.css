@@ -414,7 +414,6 @@ input::placeholder {
 .box-model {
     padding: 0em 1.5em 0em 1.5em;
 }
-
 hr {
     border: 1px solid var(--border-color);
     border-width: 0.0625rem;
@@ -497,7 +496,6 @@ input:checked+.slider:before {
     border-radius: 1.5em;
     box-shadow: var(--box-shadow);
 }
-
 .device-no {
     position: absolute;
     right: 0.2em;
@@ -507,7 +505,6 @@ input:checked+.slider:before {
     letter-spacing: 2px;
     color: rgb(224, 224, 224);
 }
-
 .device-item {
     position: absolute;
     bottom: 1em;
@@ -541,16 +538,11 @@ input:checked+.slider:before {
     .device-box {
         width: 70px;
         height: 50px;
-
     }
-
     .device-no {
         font-size: 1.5rem;
     }
-
 }
-
-
 .btn-setting {
     padding: 1rem;
     background-color: var(--primary-color);
@@ -559,14 +551,12 @@ input:checked+.slider:before {
     border-radius: 0.5rem;
     color: #fff;
 }
-
 .faq-box {
     width: 9rem;
     height: 7.25rem;
     border-radius: 0.5rem;
     padding: 1em;
 }
-
 .faq-box p {
     width: 9rem;
 }
@@ -582,28 +572,21 @@ input:checked+.slider:before {
     border-radius: 0.5rem;
     cursor: pointer;
     transition: 0.5s;
-
 }
-
 .question {
     width: 90%;
     font-size: 0.875rem;
     font-weight: 500;
-
 }
-
-
 @media screen and (max-width:420px) {
     .faq-box {
         width: 7rem;
         height: 5.25rem;
     }
-
     .faq-box p {
         width: 7rem;
     }
 }
-
 @media screen and (max-width: 768px) {
     .question {
         font-size: 1em;
@@ -627,22 +610,15 @@ input:checked+.slider:before {
     line-height: 1.25rem;
     letter-spacing: 0.01563rem;
 }
-.question-box .minus {
+.question-box .minus,.question-box.active .plus  {
     display: none;
 }
-
 .question-box.active .ans {
     max-height: 30em;
 }
-
 .question-box.active .minus {
     display: flex;
 }
-
-.question-box.active .plus {
-    display: none;
-}
-
 .notification-box {
     padding-right: 1.5rem;
     padding-left: 1.5rem;
@@ -650,29 +626,23 @@ input:checked+.slider:before {
     position: relative;
     border-bottom: 1px solid var(--border-color)
 }
-
 .notification-box:hover {
     background: var(--bg-1);
 }
-
 .notification-box p {
     font-size: 1rem;
     font-style: normal;
     font-weight: 400;
     line-height: 1.5rem;
 }
-
 .notification-box span {
     font-weight: 600;
 }
-
 .notification-time {
     position: absolute;
     bottom: 5%;
     right: 5%;
-
 }
-
 .notification-time p {
     font-size: 0.625rem;
     font-weight: 400;
@@ -684,51 +654,33 @@ input:checked+.slider:before {
     background-color: var(--bg-1);
     border-radius: 0.5rem;
 }
-
 .message-box {
     position: relative;
     padding: 1rem;
     height: 3.625rem;
     align-items: center;
 }
-
 #message-page .message-box {
     padding: 1rem 1.5em 1rem 1.5rem;
 }
-
 .message-box:hover {
     background-color: var(--bg-1);
 }
-
 .message-box p {
     font-size: 0.875rem;
     font-style: normal;
     font-weight: 400;
     line-height: 1rem;
 }
-
 .message-time {
     position: absolute;
     top: 20%;
     right: 5%;
 }
-
 .message-box img {
     margin-top: 0;
 }
-
-
 /* model box pop up */
-.overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    display: none;
-    z-index: -10;
-}
 .modal {
     position: fixed;
     bottom: -100%;
@@ -758,7 +710,6 @@ input:checked+.slider:before {
     padding: 20px;
     width: calc(100% - 40px);
     z-index: 2;
-   
 }
 .model-content.model-open{
     bottom: 0;
@@ -776,15 +727,10 @@ input:checked+.slider:before {
 .modal-trigger {
     cursor: pointer;
 }
-
-
-
 /* tab item */
 .setting-top-nav {
     padding: 0.2em;
-
 }
-
 .tab-item {
     padding: 0.6em 1.5em 0.6em 1.5em;
     width: calc(100% - 2em);
@@ -792,7 +738,6 @@ input:checked+.slider:before {
     color: var(--inactive-1);
     font-weight: 500;
 }
-
 .tab-item.active-tab {
     border-radius: 0.5em;
     background-color: var(--tab-hover);
@@ -801,7 +746,6 @@ input:checked+.slider:before {
     border-left: none;
     border-right: none;
 }
-
 .popup-container {
     display: none;
     position: fixed;
@@ -861,40 +805,9 @@ input:checked+.slider:before {
     margin-top: 10px;
 }
 
-.scale::before {
-    content: "";
-    width: 20px;
-    height: 20px;
-    background-color: var(--primary-color);
-    position: absolute;
-    top: 0;
-    transform: translateX(-50%);
-    border-radius: 50%;
-    cursor: grab;
-}
-.scale:hover::before {
-    background-color: var(--primary-color);
-}
-
-.scale::after {
-    content: "10";
-    position: absolute;
-    top: 30px;
-    left: 0;
-}
-
 .slider-value {
     text-align: center;
     margin-top: -0.625rem;
-}
-
-.save-btn {
-    padding: 0.8em;
-    background-color: var(--primary-color);
-    color: #FFFFFF;
-    width: 30%;
-    margin: auto;
-    border-radius: 1rem;
 }
 
 /* login dropdown */
@@ -947,7 +860,6 @@ input:checked+.slider:before {
     font-size: 14.2px !important;
     line-height: 19px !important;
 }
-
 .sender-text {
     padding: 0.8em;
     padding-bottom: 1.7em;
@@ -959,11 +871,9 @@ input:checked+.slider:before {
     font-size: 14.2px !important;
     line-height: 19px !important;
 }
-
 .sender-text .message-time-chat {
     color: #e6e5e5;
 }
-
 .sender-text.sender-img {
     background: none;
     border: 1px solid var(--border-color);
