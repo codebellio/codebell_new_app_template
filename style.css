@@ -253,10 +253,6 @@ input::placeholder {
 }
 
 /* ======footer start===== */
-.top-content {
-    position: sticky;
-    top: 0;
-}
 
 .middle-contents {
     overflow-y: scroll;
