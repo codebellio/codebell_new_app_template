@@ -1119,5 +1119,5 @@ input:checked+.slider:before {
     background-size: cover;
     z-index:-5;
     position: fixed;
-    filter: blur(250px);
+
 }
