@@ -87,7 +87,18 @@ body {
 .sub{
     font-size: 0.875em;
 }
+.hover-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5em;
+    border-radius: 0.5em;
+}
+.hover-btn:hover{
+    background-color: var(--tab-bg);
+    
 
+}
 .dim{
     color: var(--sub-text-color);
 }
@@ -132,8 +143,8 @@ h2 {
 }
 
 h3 {
-    font-size: 1rem;
-    font-weight: 700;
+    font-size: 1em;
+    font-weight: 600;
 }
 
 .list-content {
