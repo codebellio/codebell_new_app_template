@@ -29,6 +29,7 @@ body {
     --dropdown: #FFFFFF;
     --tab-bg: #F2F4F5;
     --tab-hover: #FFFFFF;
+    --chat-bg:linear-gradient(to right, #42a2e2ab, #6dd5fa, #d8f0f7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     /* font-size */
     --heading: 1.5rem;
     --big-heading: 2rem;
@@ -50,6 +51,8 @@ body {
     --dropdown: #1c1c1c;
     --border-color: #303437;
     --inactive-1: #979C9E;
+    --chat-bg:radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%); 
+
     --box-shadow: 0 0 2px var(--primary-color);
 }
 
@@ -84,6 +87,8 @@ body {
     z-index: 100;
     
 }
+
+
 .sub{
     font-size: 0.875em;
 }
@@ -1106,4 +1111,13 @@ input:checked+.slider:before {
 .danger{
     background: rgb(202, 4, 4);
     color: #ffffff;
+}
+.bg-chat{
+    width: 100vw;
+    height: 100vh;
+    background: var(--chat-bg);
+    background-size: cover;
+    z-index:-5;
+    position: fixed;
+    filter: blur(250px);
 }
