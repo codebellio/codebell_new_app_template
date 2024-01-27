@@ -1119,5 +1119,11 @@ input:checked+.slider:before {
     background-size: cover;
     z-index:-5;
     position: fixed;
-
+}
+.plan-card {
+    width:280px;
+}
+.plan-card h1{
+    font-size: 1.5em;
+    color: var(--primary-color);
 }
