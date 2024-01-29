@@ -1112,14 +1112,14 @@ input:checked+.slider:before {
     background: rgb(202, 4, 4);
     color: #ffffff;
 }
-.bg-chat{
+/* .bg-chat{
     width: 100vw;
     height: 100vh;
     background: var(--chat-bg);
     background-size: cover;
     z-index:-5;
     position: fixed;
-}
+} */
 .plan-card {
     width:280px;
 }
