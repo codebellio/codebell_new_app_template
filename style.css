@@ -867,7 +867,7 @@ input:checked+.slider:before {
     position: absolute;
     right: 5%;
     bottom: 0;
-    font-size: 0.8em;
+    font-size: 0.6875rem;
     color: var(--inactive-1);
 }
 .receiver-text {
@@ -1126,4 +1126,16 @@ input:checked+.slider:before {
 .plan-card h1{
     font-size: 1.5em;
     color: var(--primary-color);
+}
+#main-msg{
+    font-family: 'Inter', sans-serif;
+    background: var(--bg-1);
+    outline: none;
+    border: none;
+    color: var(--text-color);
+    font-size: 16px;
+ padding: 0.5em;
+ padding-left: 0;
+ font-weight: 400;
+    vertical-align: center;
 }
