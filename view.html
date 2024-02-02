@@ -41,12 +41,10 @@
     </div>
     </div>
     <div class="container flex column center">
-      
-
-
         <div class="flex column gap hjo middle-contents">
             <!-- 4 tabs view,setting,preview,visits -->
             <div class="flex center padding" style="padding-top: 0;padding-bottom:0;">
+                
                 <div class="flex middle center setting-top-nav" style="background:var(--bg-1);border-radius: 0.5em;">
                     <a href="#" class="flex center middle tab-item active-tab">
                         view
@@ -64,7 +62,25 @@
             </div>
            
           
-            <div class="flex middle center column middle-contents" style="flex:1">
+            <div class="flex middle center column middle-contents gap" >
+                <div class="flex middle between  bg-2 padding" style=" width:calc(100% - 2em)">
+                    <div class="flex s-gap column">
+                        <h3>Geofencing  <span style="color: var( --inactive); "> (Inactive)</span></h3>
+                       
+                    </div>
+                    <a href="geofencing.html" class="flex middle center"  style="padding: 0.5em;background:var(--tab-bg); border-radius:0.5em">
+                  <svg  xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                    fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16">
+                    <path
+                        d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325" />
+                </svg></a>
+                </div>
+                <div class="flex column s-gap  bg-2 padding" style=" width:calc(100% - 2em)">
+                    <h3>Username</h3>
+                    <div class="flex middle between gap input margin-bottom:1em ">
+                        <input type="text" placeholder="Eg: Codebell Tag">
+                    </div>
+                </div>
               
                 <div class="flex column center middle gap download_qr" style="padding-top: 2.5em;padding-bottom:2.5em" >
                     <h3 style="color: black;">Scan to call</h3>
@@ -84,7 +100,7 @@
     
             </div>
         
-            <div class="flex column middle gap">
+            <div class="flex center middle gap ">
                 <a href="qr_new.html" class="button flex middle s-gap">Download <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
                     <mask id="mask0_281_10173" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="25" height="24">
                       <rect x="0.5" width="24" height="24" fill="#D9D9D9"/>
@@ -92,6 +108,9 @@
                     <g mask="url(#mask0_281_10173)">
                       <path d="M12.5 16L7.5 11L8.9 9.55L11.5 12.15V4H13.5V12.15L16.1 9.55L17.5 11L12.5 16ZM6.5 20C5.95 20 5.47917 19.8042 5.0875 19.4125C4.69583 19.0208 4.5 18.55 4.5 18V15H6.5V18H18.5V15H20.5V18C20.5 18.55 20.3042 19.0208 19.9125 19.4125C19.5208 19.8042 19.05 20 18.5 20H6.5Z" fill="white"/>
                     </g>
+                  </svg></a>
+                  <a href="qr_new.html" class="button flex middle s-gap">Share <svg xmlns="http://www.w3.org/2000/svg" width="20" height="24" fill="currentColor" class="bi bi-share" viewBox="0 0 16 16">
+                    <path d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.5 2.5 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5m-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3m11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3"/>
                   </svg></a>
                 
             </div>

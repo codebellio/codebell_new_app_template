@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Message</title>
-    <link rel="manifest" href="site.webmanifest"   />
+    <title>Dashboard</title>
+    <link rel="manifest" href="site.webmanifest" />
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="layout.css">
     <link rel="stylesheet" href="/assets/swiper-bundle.css">
@@ -13,7 +13,8 @@
 </head>
 
 <body>
-    <div class="flex between middle header">
+    <!-- header -->
+    <div class="flex between middle header ">
         <a href="setting.html" class="flex gap middle ">
             <div class="profile-img flex middle">
                 <img src="/assets/img/profile1.png" alt="">
@@ -36,110 +37,49 @@
                 <div class="notification-count flex middle center">3</div>
 
             </a>
-          
-    </div>
-    <!-- main -->
-    <div class="container flex column center" >
-        <div class="flex column gap box-model">
-            <div class="flex middle   message-search">
-                <svg style="margin-right: 0.5em;" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                    viewBox="0 0 16 16" fill="none">
-                    <path
-                        d="M13.3334 13.3333L10.7556 10.7556M12.1482 7.40741C12.1482 10.0256 10.0257 12.1481 7.40749 12.1481C4.78925 12.1481 2.66675 10.0256 2.66675 7.40741C2.66675 4.78917 4.78925 2.66667 7.40749 2.66667C10.0257 2.66667 12.1482 4.78917 12.1482 7.40741Z"
-                        stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
-                </svg>
-                <input type="text" placeholder="Search" style="font-size: 1rem;
-                font-style: normal;
-                font-weight: 400;">
-            </div>
-        </div>
-        <div class="flex column  middle-contents" style="margin-top:1rem">
-            <div class="flex between message-box contact-box">
-                <div class="flex gap middle" >
-                    <img src="/assets/img/Group-1.png" alt=""  >
-                    <div class="flex column" style="gap:0.3rem">
-                        <p style="font-size: 1rem;">Codebell Support</p>
-                    </div>
-                </div>
-               
-            </div>
-            <a href="chat.html" class="flex between message-box contact-box">
-                <div class="flex gap middle">
-                    <img src="/assets/img/Avatar-4.png" alt="">
-                    <div class="flex column" style="gap:0.3rem">
-                        <p style="font-size: 1rem;">Emily Johnson</p>
-                    </div>
-                </div>
-             
-            </a>
-            <a href="chat.html" class="flex between message-box contact-box">
-                <div class="flex gap middle">
-                    <img src="/assets/img/Avatar-4.png" alt="">
-                    <div class="flex column" style="gap:0.3rem">
-                        <p style="font-size: 1rem;">Michael Davis</p>
-                    </div>
-                </div>
-            </a>
-            <a href="chat.html" class="flex between message-box contact-box">
-                <div class="flex gap middle">
-                    <img src="/assets/img/Avatar-4.png" alt="">
-                    <div class="flex column" style="gap:0.3rem">
-                        <p style="font-size: 1rem;">Sophia Rodriguez</p>
-                    </div>
-                </div>
-            </a>
-            <a href="chat.html" class="flex between message-box contact-box">
-                <div class="flex gap middle">
-                    <img src="/assets/img/Avatar-4.png" alt="">
-                    <div class="flex column" style="gap:0.3rem">
-                        <p style="font-size: 1rem;">Daniel Brown</p>
-                    </div>
-                </div>
-            </a>
-            <a href="chat.html" class="flex between message-box contact-box">
-                <div class="flex gap middle">
-                    <img src="/assets/img/Avatar-4.png" alt="">
-                    <div class="flex column" style="gap:0.3rem">
-                        <p style="font-size: 1rem;">Olivia Taylor</p>
-                    </div>
-                </div>
-               
-            </a>
-            <a href="chat.html" class="flex between message-box contact-box">
-                <div class="flex gap middle">
-                    <img src="/assets/img/Avatar-4.png" alt="">
-                    <div class="flex column" style="gap:0.3rem">
-                        <p style="font-size: 1rem;">Matthew Wilson</p>
-                    </div>
-                </div>
-              
-            </a>
-            <a href="chat.html" class="flex between message-box contact-box">
-                <div class="flex gap middle">
-                    <img src="/assets/img/Avatar-4.png" alt="">
-                    <div class="flex column" style="gap:0.3rem">
-                        <p style="font-size: 1rem;">Matthew Wilson</p>
-                    </div>
-                </div>
-              
-            </a>
-            <a href="chat.html" class="flex between message-box contact-box">
-                <div class="flex gap middle">
-                    <img src="/assets/img/Avatar-4.png" alt="">
-                    <div class="flex column" style="gap:0.3rem">
-                        <p style="font-size: 1rem;">Matthew Wilson</p>
-                    </div>
-                </div>
-               
-            </a>
-        </div>
+         
+    
     </div>
 
-    <!-- footer -->
+
+    <div class="container flex column center">
+      
+        <div class="padding" >
+            <div class="flex column gap  padding round-corners" style="border: 1px solid var(--inactive);">
+            <h3 style="font-weight: 500;">Do you have Codebell?</h3>
+                <p class="sub"> click start to scan and activate this codebell</p>
+                <div class="flex middle gap between">
+                    <span></span>
+                  <div class="flex middle gap">
+                      <button class="mini">start</button>
+                  </div>
+                </div>
+            </div>
+        </div>
+        <div class="padding" >
+            <div class="flex column gap  padding round-corners" style="border: 1px solid var(--inactive);">
+            <h3 style="font-weight: 500;">Don't have Codebell with you? </h3>
+                <p class="sub">you can buy from our codebell products range or you can generate one
+                    products small  </p>
+                <div class="flex middle gap between">
+             
+                  <div class="flex middle gap">
+                      
+                      <button class="mini">click here to generate your codebell digital
+                    </button>
+                  </div>
+                </div>
+            </div>
+        </div>
+    
+      
+    </div>
+
+    
     <div class="footer">
         <div class=" flex middle center  navigation">
             <div class="flex item-list">
-                <a href="dashboard.html" class="flex column middle item">
+                <div class="flex column middle item ">
                     <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23"
                         fill="none">
                         <path
@@ -147,18 +87,18 @@
                             fill="currentColor" />
                     </svg>
                     <p>Home</p>
-                </a>
-                <a href="#" class="flex column middle item ">
+                </div>
+                <a href="codebells.html" class="flex column middle item">
                     <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor"
-                    class="bi bi-stack" viewBox="0 0 16 16">
-                    <path
-                        d="m14.12 10.163 1.715.858c.22.11.22.424 0 .534L8.267 15.34a.6.6 0 0 1-.534 0L.165 11.555a.299.299 0 0 1 0-.534l1.716-.858 5.317 2.659c.505.252 1.1.252 1.604 0l5.317-2.66zM7.733.063a.6.6 0 0 1 .534 0l7.568 3.784a.3.3 0 0 1 0 .535L8.267 8.165a.6.6 0 0 1-.534 0L.165 4.382a.299.299 0 0 1 0-.535z" />
-                    <path
-                        d="m14.12 6.576 1.715.858c.22.11.22.424 0 .534l-7.568 3.784a.6.6 0 0 1-.534 0L.165 7.968a.299.299 0 0 1 0-.534l1.716-.858 5.317 2.659c.505.252 1.1.252 1.604 0z" />
-                </svg>
+                        class="bi bi-stack" viewBox="0 0 16 16">
+                        <path
+                            d="m14.12 10.163 1.715.858c.22.11.22.424 0 .534L8.267 15.34a.6.6 0 0 1-.534 0L.165 11.555a.299.299 0 0 1 0-.534l1.716-.858 5.317 2.659c.505.252 1.1.252 1.604 0l5.317-2.66zM7.733.063a.6.6 0 0 1 .534 0l7.568 3.784a.3.3 0 0 1 0 .535L8.267 8.165a.6.6 0 0 1-.534 0L.165 4.382a.299.299 0 0 1 0-.535z" />
+                        <path
+                            d="m14.12 6.576 1.715.858c.22.11.22.424 0 .534l-7.568 3.784a.6.6 0 0 1-.534 0L.165 7.968a.299.299 0 0 1 0-.534l1.716-.858 5.317 2.659c.505.252 1.1.252 1.604 0z" />
+                    </svg>
                     <p>Codebells</p>
                 </a>
-                <div class="flex column middle scan_now item ">
+                <div class="flex column middle scan_now item active">
                     <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-qr-code-scan" viewBox="0 0 16 16">
                         <path d="M0 .5A.5.5 0 0 1 .5 0h3a.5.5 0 0 1 0 1H1v2.5a.5.5 0 0 1-1 0zm12 0a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0V1h-2.5a.5.5 0 0 1-.5-.5M.5 12a.5.5 0 0 1 .5.5V15h2.5a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5v-3a.5.5 0 0 1 .5-.5m15 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1 0-1H15v-2.5a.5.5 0 0 1 .5-.5M4 4h1v1H4z"/>
                         <path d="M7 2H2v5h5zM3 3h3v3H3zm2 8H4v1h1z"/>
@@ -168,7 +108,9 @@
                       </svg>
                     <p style="white-space: nowrap;">Scan now</p>
                 </div>
-                <a href="messages.html" class="flex column middle item ">
+
+               
+                <a href="messages.html" class="flex column middle item">
                     <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor"
                         class="bi bi-chat-left-text" viewBox="0 0 16 16">
                         <path
@@ -178,7 +120,7 @@
                     </svg>
                     <p>Message</p>
                 </a>
-                <a href="contacts.html" class="flex column middle item active">
+                <a href="contacts.html" class="flex column middle item">
                     <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-people" viewBox="0 0 16 16">
                         <path d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1zm-7.978-1L7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002-.014.002zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4m3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0M6.936 9.28a6 6 0 0 0-1.23-.247A7 7 0 0 0 5 9c-4 0-5 3-5 4q0 1 1 1h4.216A2.24 2.24 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816M4.92 10A5.5 5.5 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0m3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4"/>
                       </svg>
