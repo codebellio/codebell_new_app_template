@@ -1149,9 +1149,9 @@ input:checked+.slider:before {
     background-color: var(--product);
     cursor: pointer;
 }
-.img-box p{
-    color: var(--sub-text-color);
-}
+
+
+
 @media screen and (max-width:380px) {
     .img-box {
         width: 130px;
