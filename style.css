@@ -29,6 +29,7 @@ body {
     --dropdown: #FFFFFF;
     --tab-bg: #F2F4F5;
     --tab-hover: #FFFFFF;
+    --product:#DCE0E6;
     --chat-bg:linear-gradient(to right, #42a2e2ab, #6dd5fa, #d8f0f7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     /* font-size */
     --heading: 1.5rem;
@@ -51,6 +52,7 @@ body {
     --dropdown: #1c1c1c;
     --border-color: #303437;
     --inactive-1: #979C9E;
+    --product:#303437;
     --chat-bg:radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%); 
 
     --box-shadow: 0 0 2px var(--primary-color);
@@ -1138,4 +1140,18 @@ input:checked+.slider:before {
  padding-left: 0;
  font-weight: 400;
     vertical-align: center;
+}
+.img-box {
+    width: 150px;
+    height: 150px;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    background-color: var(--product);
+    cursor: pointer;
+}
+@media screen and (max-width:380px) {
+    .img-box {
+        width: 130px;
+        height: 100px;
+    }
 }
